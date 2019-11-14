@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio | Henk Langeveld</title>
   <link rel="stylesheet" href="/styles/style.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <script defer src="/scripts/script.js"></script>
 </head>
 <body>
   <header>
+    (header) <br>
     <img src="/img/profiel okt 2019.jpg" alt="profile foto of me" width="200">
     <nav id="main-nav">
       <ul>
@@ -20,38 +22,80 @@
     </nav>
     <nav class="social-media">
       <ul>
-        <li><a href="#github" target="_blank"></a>Github logo</li>
-        <li><a href="#LinkedIn" target="_blank"></a>LinkedIn logo</li>
-        <li><a href="#Instagram" target="_blank"></a>Instagram logo</li>
+        <li><a href="#github" target="_blank"></a><ion-icon name="logo-github"></ion-icon></li>
+        <li><a href="#LinkedIn" target="_blank"></a><ion-icon name="logo-linkedin"></ion-icon></li>
+        <li><a href="#Instagram" target="_blank"></a><ion-icon name="logo-instagram"></ion-icon></li>
       </ul>
     </nav>  
   </header>
   <hr>
-
+  
   <main>
     <section id="about">
-      About
+      (About)
       <div id="about-me">
-        omschrijving
+        <h1>Henk Langeveld</h1>
+        <p id="introduction">
+          Ik heet Henk Langeveld en ben in opleiding om frontend developer te worden. Ik heb jaren gewerkt als lichtontwerper en belichter, maar ben nu overgestapt naar web development.
+        </p>
+        <p id="motivation">
+          Wat mij aantrekt in frontend development is het grensgebied tussen ontwerpen en die ideeen netjes in de computer zetten.
+        </p>
       </div>
 
       <div id="skills">
-        skills
+        (skills)
+        <h4>Ik heb kennis van:</h4>
+        <p id="languages">
+          Programmeertalen: HTML, CSS, Javascript
+        </p>
+        <p id="versioncontrol">
+          Versie beheer: Git/Github
+        </p>
       </div>
+
+      <button>Bekijk mijn cv</button>
+
     </section>
-    <br>
+    <hr>
 
     <section id="portfolio">
-      Portfolio
+      (Portfolio)
+
+      <div class="project">
+        <h3>Cue1 Clone</h3>
+        <img src="/img/Schermafbeelding 2019-11-14 om 20.02.34 (2).png" alt="screenshot project" width="300">
+
+        <div class="description">
+          <h4>Omschrijving</h4>
+          <p>
+            Als oefening heb ik een kopie gemaakt van de website van Cue1. De maatschap waar ik voorheen maat van was 
+            <br>
+            (De site is nog niet af)
+          </p>
+        </div>
+
+        <div class="Chalange">
+          <h4>Uitdaging</h4>
+          <p>Het volledig opzetten van een website met enkel HTML en CSS. Dit is het eerste project dat ik zelf heb gemaakt</p>
+        </div>
+
+        <div class="links">
+          <button>bezoek site</button>
+          <button>bekijk code</button>
+        </div>
+      </div>
+
     </section>
-    <br>
+    <hr>
     <section id="contact">
-      Contact
+      (Contact)
     </section>
   </main>
   <hr>
 
   <footer>
+    (footer)
     <address>
       <p>Meerkoeteiland 13</p>
       <p>2251 WV  Voorschoten</p>
@@ -59,5 +103,6 @@
       <p>henk.langeveld@xs4all.nl</p>
     </address>
   </footer>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
