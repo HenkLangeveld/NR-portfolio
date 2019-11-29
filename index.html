@@ -14,7 +14,7 @@
 <body>
   <header>
     (header) <br>
-    <img src="img/profiel okt 2019.jpg" alt="profile foto of me" width="200">
+    <img src="img/profiel_okt_2019.jpg" alt="profile foto of me" width="200">
     <nav id="main-nav">
       <ul>
         <li><a href="#about">Over mij</a></li>
@@ -23,11 +23,7 @@
       </ul>
     </nav>
     
-    <ul class="social-media">
-      <li><a href="#github" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-      <li><a href="#LinkedIn" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-      <li><a href="#Instagram" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
-    </ul>
+    
      
   </header>
   <hr>
@@ -47,13 +43,35 @@
       <br><br>
 
       <div id="skills">
-        <h4>Ik heb kennis van:</h4>
-        <p id="languages">
-          Programmeertalen: HTML, CSS, Javascript
-        </p>
-        <p id="versioncontrol">
-          Versie beheer: Git/Github
-        </p>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Kennis niveaus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>HTML</th>
+              <td>Beginner</td>
+            </tr>
+            
+            <tr>
+              <th>CSS</th>
+              <td>Beginner</td>
+            </tr>
+            
+            <tr>
+              <th>Javascript</th>
+              <td>Beginner</td>
+            </tr>
+            
+            <tr>
+              <th>Git/Github</th>
+              <td>Beginner</td>
+            </tr>
+            
+          </tbody>
+        </table>
       </div>
 
       <button>Bekijk mijn cv</button>
@@ -66,7 +84,7 @@
 
       <div class="project">
         <h3>Cue1 Clone</h3>
-        <img src="img/Schermafbeelding 2019-11-14 om 20.02.34 (2).png" alt="screenshot project" width="300">
+        <img src="img/cue1_site.png" alt="screenshot project" width="300">
 
         <div class="description">
           <h4>Omschrijving</h4>
@@ -88,22 +106,47 @@
         </div>
       </div>
 
+      <h4>Projecten die ik graag zou doen:</h4>
+      <ul>
+        <li>uitgebreide site met tabellen idee: pokemon personages/ idee2: programma van info avond</li>
+        <li>mooi portfolio</li>
+        <li>uitgebreide form site</li>
+      </ul>
+
     </section>
     <hr>
     <section id="contact">
       (Contact)
+      <p>Om met mij in contact te komen kunt u hier uw naam en email invullen en even eventueel een vraag of opmerking achterlaten:</p>
+      <form action="" method="GET">
+        <label for="name">Uw naam:</label>
+        <input type="text" name="name" id="name" required>
+        <label for="email">E-mail adres:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="info">U kunt hier een vraag of opmerking noteren:</label>
+        <textarea id="info" name="info" rows="5" cols="30">
+
+        </textarea>
+        <button type="submit">Verzenden</button>
+      </form>
+      <ul> 
+          <li>Meerkoeteiland 13</li>
+          <li>2251 WV  Voorschoten</li>
+          <li>Nederland</li>
+          <li>henk.langeveld@xs4all.nl</li>
+        </ul>
     </section>
   </main>
   <hr>
 
   <footer>
     (footer)
-    <address>
-      <p>Meerkoeteiland 13</p>
-      <p>2251 WV  Voorschoten</p>
-      <p>Nederland</p>
-      <p>henk.langeveld@xs4all.nl</p>
-    </address>
+    Copyright &copy;
+    <ul class="social-media">
+        <li><a href="#github" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="#LinkedIn" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="#Instagram" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      </ul>
   </footer>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
