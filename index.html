@@ -8,31 +8,28 @@
   <meta name="keywords" content="frontend, frontend developer, web development, web design, Leiden, Amsterdam, Den Haag">
   <title>Portfolio | Henk Langeveld</title>
   <link rel="stylesheet" href="styles/style.css">
-  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <script defer src="scripts/script.js"></script>
 </head>
 <body>
   <header>
-    (header) <br>
-    <img src="img/profiel_okt_2019.jpg" alt="profile foto of me" width="200">
-    <nav id="main-nav">
-      <ul>
-        <li><a href="#about">Over mij</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    
-    
-     
+    <div class="page-width">
+      <h1 class="header-text">Henk Langeveld</h1>
+      <h2 class="header-text">Frontend developer</h2>
+      <nav id="main-nav">
+        <ul class="header-text">
+          <li><a href="#about">Over mij</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>   
+      <img src="img/profiel_okt_2019.jpg" alt="profile foto of me">
+    </div>
   </header>
-  <hr>
   
   <main>
     <section id="about">
-      (About)
       <div id="about-me">
-        <h1>Henk Langeveld</h1>
+        
         <p id="introduction">
           Ik heet Henk Langeveld en ben in opleiding om frontend developer te worden. Ik heb jaren gewerkt als lichtontwerper en belichter, maar ben nu overgestapt naar web development.
         </p>
@@ -40,7 +37,6 @@
           Wat mij aantrekt in frontend development is het grensgebied tussen ontwerpen en die ideeen netjes in de computer zetten.
         </p>
       </div>
-      <br><br>
 
       <div id="skills">
         <table>
@@ -77,13 +73,10 @@
       <button>Bekijk mijn cv</button>
 
     </section>
-    <hr>
 
     <section id="portfolio">
-      (Portfolio)
-
       <div class="project">
-        <h3>Cue1 Clone</h3>
+        <figcaption>Cue1 Clone</figcaption>
         <img src="img/cue1_site.png" alt="screenshot project" width="300">
 
         <div class="description">
@@ -108,15 +101,15 @@
 
       <h4>Projecten die ik graag zou doen:</h4>
       <ul>
-        <li>uitgebreide site met tabellen idee: pokemon personages/ idee2: programma van info avond</li>
+        <li>uitgebreide site met tabellen; idee: pokemon personages overzicht/ idee2: programma van info avond</li>
         <li>mooi portfolio</li>
         <li>uitgebreide form site</li>
+        <li>site met ingewikkelde layout</li>
+        <li>site met veel effecten</li>
       </ul>
-
     </section>
-    <hr>
+
     <section id="contact">
-      (Contact)
       <p>Om met mij in contact te komen kunt u hier uw naam en email invullen en even eventueel een vraag of opmerking achterlaten:</p>
       <form action="" method="GET">
         <label for="name">Uw naam:</label>
@@ -140,7 +133,6 @@
   <hr>
 
   <footer>
-    (footer)
     Copyright &copy;
     <ul class="social-media">
         <li><a href="#github" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
