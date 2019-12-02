@@ -14,7 +14,7 @@
   <header>
     <div class="page-width">
       <h1 class="header-text">Henk Langeveld</h1>
-      <h2 class="header-text">Frontend developer</h2>
+      <h2 class="header-text">Frontend development</h2>
       <nav id="main-nav">
         <ul class="header-text">
           <li><a href="#about">Over mij</a></li>
@@ -28,112 +28,116 @@
   
   <main>
     <section id="about">
-      <div id="about-me">
-        
-        <p id="introduction">
-          Ik heet Henk Langeveld en ben in opleiding om frontend developer te worden. Ik heb jaren gewerkt als lichtontwerper en belichter, maar ben nu overgestapt naar web development.
-        </p>
-        <p id="motivation">
-          Wat mij aantrekt in frontend development is het grensgebied tussen ontwerpen en die ideeen netjes in de computer zetten.
-        </p>
+      <div class="page-width">
+        <div id="about-me">
+          
+          <p id="introduction">
+            Ik heet Henk Langeveld en ben in opleiding om frontend developer te worden. Ik heb jaren gewerkt als lichtontwerper en belichter, maar ben nu overgestapt naar web development.
+          </p>
+          <p id="motivation">
+            Wat mij aantrekt in frontend development is het grensgebied tussen ontwerpen en die ideeen netjes in de computer zetten.
+          </p>
+        </div>
+  
+        <div id="skills">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Kennis niveaus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>HTML</th>
+                <td>Beginner</td>
+              </tr>
+              
+              <tr>
+                <th>CSS</th>
+                <td>Beginner</td>
+              </tr>
+              
+              <tr>
+                <th>Javascript</th>
+                <td>Beginner</td>
+              </tr>
+              
+              <tr>
+                <th>Git/Github</th>
+                <td>Beginner</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+  
+        <button>Bekijk mijn cv</button>
       </div>
-
-      <div id="skills">
-        <table>
-          <thead>
-            <tr>
-              <th colspan="2">Kennis niveaus</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>HTML</th>
-              <td>Beginner</td>
-            </tr>
-            
-            <tr>
-              <th>CSS</th>
-              <td>Beginner</td>
-            </tr>
-            
-            <tr>
-              <th>Javascript</th>
-              <td>Beginner</td>
-            </tr>
-            
-            <tr>
-              <th>Git/Github</th>
-              <td>Beginner</td>
-            </tr>
-            
-          </tbody>
-        </table>
-      </div>
-
-      <button>Bekijk mijn cv</button>
-
     </section>
 
     <section id="portfolio">
-      <div class="project">
-        <figcaption>Cue1 Clone</figcaption>
-        <img src="img/cue1_site.png" alt="screenshot project" width="300">
-
-        <div class="description">
-          <h4>Omschrijving</h4>
-          <p>
-            Als oefening heb ik een kopie gemaakt van de website van Cue1. De maatschap waar ik voorheen maat van was 
-            <br>
-            (De site is nog niet af)
-          </p>
+      <div class="page-width">
+        <div class="project">
+          <figcaption>Cue1 Clone</figcaption>
+          <img src="img/cue1_site.png" alt="screenshot project" width="300">
+  
+          <div class="description">
+            <h4>Omschrijving</h4>
+            <p>
+              Als oefening heb ik een kopie gemaakt van de website van Cue1. De maatschap waar ik voorheen maat van was 
+              <br>
+              (De site is nog niet af)
+            </p>
+          </div>
+  
+          <div class="chalange">
+            <h4>Uitdaging</h4>
+            <p>Het volledig opzetten van een website met enkel HTML en CSS. Dit is het eerste project dat ik zelf heb gemaakt</p>
+          </div>
+  
+          <div class="links">
+            <button>bezoek site</button>
+            <button>bekijk code</button>
+          </div>
         </div>
-
-        <div class="chalange">
-          <h4>Uitdaging</h4>
-          <p>Het volledig opzetten van een website met enkel HTML en CSS. Dit is het eerste project dat ik zelf heb gemaakt</p>
-        </div>
-
-        <div class="links">
-          <button>bezoek site</button>
-          <button>bekijk code</button>
-        </div>
+  
+        <h4>Projecten die ik graag zou doen:</h4>
+        <ul>
+          <li>uitgebreide site met tabellen; idee: pokemon personages overzicht/ idee2: programma van info avond</li>
+          <li>mooi portfolio</li>
+          <li>uitgebreide form site</li>
+          <li>site met ingewikkelde layout</li>
+          <li>site met veel effecten</li>
+        </ul>
       </div>
-
-      <h4>Projecten die ik graag zou doen:</h4>
-      <ul>
-        <li>uitgebreide site met tabellen; idee: pokemon personages overzicht/ idee2: programma van info avond</li>
-        <li>mooi portfolio</li>
-        <li>uitgebreide form site</li>
-        <li>site met ingewikkelde layout</li>
-        <li>site met veel effecten</li>
-      </ul>
     </section>
 
     <section id="contact">
-      <p>Om met mij in contact te komen kunt u hier uw naam en email invullen en even eventueel een vraag of opmerking achterlaten:</p>
-      <form action="" method="GET">
-        <label for="name">Uw naam:</label>
-        <input type="text" name="name" id="name" required>
-        <label for="email">E-mail adres:</label>
-        <input type="email" name="email" id="email" required>
-        <label for="info">U kunt hier een vraag of opmerking noteren:</label>
-        <textarea id="info" name="info" rows="5" cols="30">
-
-        </textarea>
-        <button type="submit">Verzenden</button>
-      </form>
-      <ul> 
-          <li>Meerkoeteiland 13</li>
-          <li>2251 WV  Voorschoten</li>
-          <li>Nederland</li>
-          <li>henk.langeveld@xs4all.nl</li>
-        </ul>
+      <div class="page-width">
+        <p>Om met mij in contact te komen kunt u hier uw naam en email invullen en even eventueel een vraag of opmerking achterlaten:</p>
+        <form action="" method="GET">
+          <label for="name">Uw naam:</label>
+          <input type="text" name="name" id="name" required>
+          <label for="email">E-mail adres:</label>
+          <input type="email" name="email" id="email" required>
+          <label for="info">U kunt hier een vraag of opmerking noteren:</label>
+          <textarea id="info" name="info" rows="5" cols="30">
+  
+          </textarea>
+          <button type="submit">Verzenden</button>
+        </form>
+        <ul> 
+            <li>Meerkoeteiland 13</li>
+            <li>2251 WV  Voorschoten</li>
+            <li>Nederland</li>
+            <li>henk.langeveld@xs4all.nl</li>
+          </ul>
+      </div>
     </section>
   </main>
-  <hr>
 
   <footer>
-    Copyright &copy;
+    <span>Copyright &copy; Henk Langeveld Frontend Development</span>
     <ul class="social-media">
         <li><a href="#github" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
         <li><a href="#LinkedIn" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>

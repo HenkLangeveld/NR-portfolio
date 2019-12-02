@@ -62,3 +62,25 @@ header li {
 header a {
   color: #fff;
 }
+
+footer {
+  background: linear-gradient(to top right, rgb(2, 116, 168),#A1DBD5) ;
+  color: #fff;
+  height: 70px;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+}
+
+footer ul {
+  padding: 10px;
+}
+
+footer li {
+  display: inline;
+}
+
+footer a{
+  color: #fff;
+  font-size: 1.5rem;
+}
