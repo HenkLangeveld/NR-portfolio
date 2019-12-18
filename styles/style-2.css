@@ -6,7 +6,7 @@
   --primary-color: #94b1ee;
   --secondary-color: #c9d8f6;
   --max-page-width: 1100px;
-  --header-heigth: 140px;
+  --header-height: 140px;
   --font-1: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
@@ -36,6 +36,21 @@ body {
 a {text-decoration: none;}
 li {list-style: none;}
 
+.button-dark {
+  display: inline-block;
+  font-size: 1rem;
+  background: var(--dark-color);
+  color: var(--white);
+  padding: 10px;
+  margin: 20px;
+  border: none;
+}
+
+.button-dark:hover {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+}
+
 /* Header */
 .header {
   background-color: var(--dark-color);
@@ -45,7 +60,7 @@ li {list-style: none;}
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: var(--header-heigth);
+  height: var(--header-height);
 }
 
 .header-text {
@@ -87,6 +102,86 @@ padding: 10px;
   color: var(--secondary-color);
 }
 
+/* Section About */
+.about {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  /* min-height: calc(100vh - var(--header-height)); */
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me,
+#skills {
+  flex: 1;
+}
+
+.about-text {
+  padding: 20px;
+}
+
+.about-text p {
+  padding: 10px 0;
+}
+
+.about-image {
+  width: 100%;
+  min-height: 240px;
+  background: url('../img/person-touching-open-macbook-on-table-839465.jpg');
+  background-size: cover;
+}
+
+#skills {
+  background: var(--primary-color);
+}
+
+#skills h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+#skills .my-skills {
+  display: flex;
+}
+
+#skills .box {
+  flex: 1;
+  text-align: center;
+}
+
+#skills .box-html,
+#skills .box-js {
+  background-color: var(--secondary-color);
+}
+
+#skills .box-css,
+#skills .box-github {
+  background-color: var(--dark-color);
+  color: var(--secondary-color);
+}
+
+#skills h3 {
+  padding: 10px 0 20px 0;
+}
+
+/* Section Portfolio */
+#portfolio {
+  background: var(--dark-color);
+  text-align: center;
+}
+
+#portfolio h2 {
+  padding: 20px 0 10px 0;
+}
+
+.project img {
+  width: 100%;
+}
+
+
+
+
+
 @media screen and (min-width: 501px) {
   .header img {
     display: block;
@@ -95,6 +190,20 @@ padding: 10px;
 
 @media screen and (min-width: 691px) {
   .main-nav ul {
-    display: flex;}
-  .fa-bars {display: none;}
+    display: flex;
+  }
+
+  .header .fa-bars {
+    display: none;
+  }
+
+  #about-me {
+    display: flex;
+  }
+  
+  .about-image, 
+  .about-text {
+    flex: 1;
+  }
+  
 }

@@ -32,59 +32,51 @@
   </header>
   
   <main>
-    <section id="about">
-      <div class="page-width">
-        <div id="about-me">
+    <section id="about" class="about">
+      <div id="about-me">
+        <div class="about-text">
           <h2>Introduction</h2>
           <p class="introduction">
             Ik heet Henk Langeveld en ben in opleiding om frontend developer te worden. Ik heb jaren gewerkt als lichtontwerper en belichter, maar ben nu overgestapt naar web development.
           </p>
-          <p id="motivation">
+          <p class="motivation">
             Wat mij aantrekt in frontend development is het grensgebied tussen ontwerpen en die ideeen netjes in de computer zetten.
           </p>
         </div>
-  
-        <div id="skills">
-          <div class="my-skills">
-            <table>
-              <thead>
-                <tr>
-                  <th colspan="2">Kennis niveaus</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>HTML</th>
-                  <td>Beginner</td>
-                </tr>
-                
-                <tr>
-                  <th>CSS</th>
-                  <td>Beginner</td>
-                </tr>
-                
-                <tr>
-                  <th>Javascript</th>
-                  <td>Beginner</td>
-                </tr>
-                
-                <tr>
-                  <th>Git/Github</th>
-                  <td>Beginner</td>
-                </tr>
-                
-              </tbody>
-            </table>
-            <button>Bekijk mijn cv</button>
-          </div>
-          <img src="img/person-touching-open-macbook-on-table-839465.jpg" alt="">
+        <div class="about-image">
+          <!-- <img src="img/person-touching-open-macbook-on-table-839465.jpg" alt=""> -->
         </div>
-  
+      </div>
+        
+
+        <div id="skills">
+          <h2>Skills</h2>
+          <div class="my-skills">
+            <article class="box box-html">
+              <i class="fab fa-html5 fa-6x"></i>
+              <h3>HTML</h3>
+            </article>
+            <article class="box box-css">
+              <i class="fab fa-css3-alt fa-6x"></i>
+              <h3>CSS</h3>
+            </article>
+            <article class="box box-js">
+              <i class="fab fa-js fa-6x"></i>
+              <h3>JavaScript</h3>
+            </article>
+            <article class="box box-github">
+              <i class="fab fa-github fa-6x"></i>
+              <h3>Github</h3>
+            </article>  
+          </div>
+          <a class="button-dark" href="#">Bekijk mijn cv</a>
+        </div>
       </div>
     </section>
 
     <section id="portfolio">
       <div class="page-width">
+        <h2>Portfolio</h2>
         <article class="project">
           <div class="image">
             <img src="img/cue1_site.png" alt="screenshot project">
