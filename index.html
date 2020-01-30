@@ -7,127 +7,116 @@
   <meta name="description" content="Frontend Developer Henk Langeveld presenteert hiermee zijn werk">
   <meta name="keywords" content="frontend, frontend developer, web development, web design, Leiden, Amsterdam, Den Haag">
   <title>Portfolio | Henk Langeveld</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Raleway:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style-2.css">
   <script src="https://kit.fontawesome.com/9348461e93.js" crossorigin="anonymous"></script>
   <script defer src="scripts/script.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="page-width">
-      <div class="header-text">
-        <h1>Henk Langeveld</h1>
-        <h2>Frontend development</h2>
+  <section class="first-page">
+    <header class="header">
+      <div class="page-width">
+        <span class="logo header_logo">HL</span>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">Over mij</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <i class="fas fa-bars fa-2x"></i>
       </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#about">Over mij</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <i class="fas fa-bars fa-2x"></i>
-      <img src="img/profiel_okt_2019.jpg" alt="profile foto of me">
-    </div>
-  </header>
+    </header>
+    <h1 class="name">Henk Langeveld</h1>
+    <p class="intro">
+      <span>Frontend development</span><br>Creatief, doelgericht,<br>oog voor detail
+    </p>
+  </section>
   
   <main>
-    <section id="about" class="about">
-      <div id="about-me">
-        <div class="about-text">
-          <h2>Introduction</h2>
-          <p class="introduction">
-            Ik heet Henk Langeveld en ben in opleiding om frontend developer te worden. Ik heb jaren gewerkt als lichtontwerper en belichter, maar ben nu overgestapt naar web development.
-          </p>
-          <p class="motivation">
-            Wat mij aantrekt in frontend development is het grensgebied tussen ontwerpen en die ideeen netjes in de computer zetten.
-          </p>
+    <section id="portfolio">
+      <div class="page-width portfolio">
+        <h2 class="portfolio_title">Portfolio</h2>
+
+        <article class="project">
+          <h3 class="project_title">Uber</h3>
+          <img class="project_image" src="img/uber_website.png" alt="screenshot Cue1">
+          <div class="project_links">
+            <button class="button button-dark">bezoek site</button>
+            <button class="button button-dark">bekijk code</button>
+          </div>
+        </article>
+  
+        <article class="project">
+          <h3 class="project_title">Ola</h3>
+          <img class="project_image" src="img/ola_website.png" alt="screenshot Cue1">
+          <div class="project_links">
+            <button class="button button-dark">bezoek site</button>
+            <button class="button button-dark">bekijk code</button>
+          </div>
+        </article>
+  
+        <article class="project">
+          <h3 class="project_title">Cue 1</h3>
+          <img class="project_image" src="img/cue1_website.png" alt="screenshot Cue1">
+          <div class="project_links">
+            <button class="button button-dark">bezoek site</button>
+            <button class="button button-dark">bekijk code</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="page-width">
+        <div class="about">
+          <h2 class="about_title">Over Mij</h2>
+          
+          <div class="about_text">
+            <h2>Henk Langeveld</h2>
+            <p class="introduction">
+              Ik ben in opleiding om frontend developer te worden. Ik heb jaren gewerkt als lichtontwerper en belichter, maar ben nu overgestapt naar web development.
+            </p>
+            <p class="motivation">
+              Wat mij aantrekt in frontend development is het grensgebied tussen ontwerpen en die ideeen netjes in de computer zetten.
+            </p>
+          </div>
+    
+          <div class="about_image"></div>
+          <!-- <img src="img/profiel_okt_2019.jpg" alt="profiel foto" class="profile-photo"> -->
         </div>
-        <div class="about-image">
-          <!-- <img src="img/person-touching-open-macbook-on-table-839465.jpg" alt=""> -->
+        
+          
+        <h2 class="about_title">Skills</h2>
+        
+        <div class="skills">
+          <article class="box box-html">
+            <i class="fab fa-html5 fa-6x"></i>
+            <h3>HTML</h3>
+          </article>
+          <article class="box box-css">
+            <i class="fab fa-css3-alt fa-6x"></i>
+            <h3>CSS</h3>
+          </article>
+          <article class="box box-js">
+            <i class="fab fa-js fa-6x"></i>
+            <h3>JavaScript</h3>
+          </article>
+          <article class="box box-github">
+            <i class="fab fa-github fa-6x"></i>
+            <h3>Github</h3>
+          </article>  
         </div>
+            
+        <a class="button button-dark button_cv" href="#">Bekijk mijn cv</a>
       </div>
         
-
-        <div id="skills">
-          <h2>Skills</h2>
-          <div class="my-skills">
-            <article class="box box-html">
-              <i class="fab fa-html5 fa-6x"></i>
-              <h3>HTML</h3>
-            </article>
-            <article class="box box-css">
-              <i class="fab fa-css3-alt fa-6x"></i>
-              <h3>CSS</h3>
-            </article>
-            <article class="box box-js">
-              <i class="fab fa-js fa-6x"></i>
-              <h3>JavaScript</h3>
-            </article>
-            <article class="box box-github">
-              <i class="fab fa-github fa-6x"></i>
-              <h3>Github</h3>
-            </article>  
-          </div>
-          <a class="button-dark" href="#">Bekijk mijn cv</a>
-        </div>
       </div>
     </section>
 
-    <section id="portfolio">
+    <section id="contact" class="contact">
       <div class="page-width">
-        <h2>Portfolio</h2>
-        <article class="project">
-          <div class="image">
-            <img src="img/cue1_site.png" alt="screenshot project">
-            <figcaption>Cue1 Clone</figcaption>
-          </div>
-  
-          <div class="info">
-            <div class="info-text">
-              <div class="description">
-                <h4>Omschrijving</h4>
-                <p>
-                  Als oefening heb ik een kopie gemaakt van de website van Cue1. De maatschap waar ik voorheen maat van was 
-                  <br>
-                  (De site is nog niet af)
-                </p>
-              </div>
-      
-              <div class="chalenge">
-                <h4>Uitdaging</h4>
-                <p>Het volledig opzetten van een website met enkel HTML en CSS. Dit is het eerste project dat ik zelf heb gemaakt</p>
-              </div>
-            </div>
-    
-            <div class="links">
-              <button>bezoek site</button>
-              <button>bekijk code</button>
-            </div>
-          </div>
-        </article>
-  
-        <article>
-          <h3>Projecten die ik graag zou doen:</h3>
-          <ul>
-            <li>
-              uitgebreide site met tabellen zoals: 
-              <ol>
-                <li>pokemon personages overzicht</li>
-                <li>programma van info avond</li>
-              </ol>
-            </li>
-            <li>mooie portfolio</li>
-            <li>uitgebreide form site</li>
-            <li>site met ingewikkelde layout</li>
-            <li>site met animaties</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="page-width">
+        <h2 class="contact_title">Contact</h2>
         <p>Om met mij in contact te komen kunt u hier uw naam en email invullen en even eventueel een vraag of opmerking achterlaten:</p>
         <form action="" method="GET">
           <label for="name">Uw naam:</label>
@@ -150,12 +139,12 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <span>Copyright &copy; 2019 Henk Langeveld Frontend Development</span>
     <ul class="social-media">
-        <li><a href="#github" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-        <li><a href="#LinkedIn" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-        <li><a href="#Instagram" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#github" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="#LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
       </ul>
   </footer>
 </body>

@@ -24,8 +24,8 @@ html {
 
 body {
   font-family: var(--font-1);
-  background: var(--primary-color);
-  color: var(--white);
+  background: white;
+  color: black;
 }
 
 .page-width {
@@ -33,7 +33,10 @@ body {
   margin: auto;
 }
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
 li {list-style: none;}
 
 .button-dark {
@@ -42,43 +45,50 @@ li {list-style: none;}
   background: var(--dark-color);
   color: var(--white);
   padding: 10px;
-  margin: 20px;
-  border: none;
+  margin: 10px;
+  border: 1px solid var(--dark-color);
 }
 
 .button-dark:hover {
-  background-color: var(--secondary-color);
+  background: none;
   color: var(--dark-color);
 }
 
-/* Header */
+/* Section First page */
+.first-page {
+  /* background: url("https://images.unsplash.com/photo-1524385387790-eaafe455efbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1183&q=80"); */
+  background: url("https://images.unsplash.com/photo-1576345370995-26018389c723?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center/cover;
+  color: white;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
 .header {
-  background-color: var(--dark-color);
+  height: 100%;
+  padding: 1.5rem;
+  justify-self: stretch;
+  /* background-color: var(--dark-color); */
 }
 
 .header > .page-width {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  height: var(--header-height);
+  align-items: center;
 }
 
-.header-text {
-  padding: 0 20px;
-  align-self: center;
-}
-
-
-.header a {color: var(--white);}
-
-.header img {
-  display: none;
-  width: 100px;
-  height: 100px;
-  margin: 20px;
-  order: -1;
-  border: 4px solid var(--secondary-color);
-  border-radius: 50%;
+.logo {
+  font-family: "Noto";
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.25em;
+  color: black;
+  padding: 1rem;
+  padding-right: 1.75rem;/* compensation for letter-spacing */
+  background: var(--primary-color);
+  /* border: 1px solid var(--dark-color); */
 }
 
 .main-nav ul {
@@ -99,85 +109,124 @@ padding: 10px;
 }
 
 .fa-bars:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
-/* Section About */
-.about {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
-  /* min-height: calc(100vh - var(--header-height)); */
-  display: flex;
-  flex-direction: column;
+.name {
+  font-size: 3rem;
 }
 
-.about-me,
-#skills {
-  flex: 1;
-}
-
-.about-text {
-  padding: 20px;
-}
-
-.about-text p {
-  padding: 10px 0;
-}
-
-.about-image {
-  width: 100%;
-  min-height: 240px;
-  background: url('../img/person-touching-open-macbook-on-table-839465.jpg');
-  background-size: cover;
-}
-
-#skills {
-  background: var(--primary-color);
-}
-
-#skills h2 {
-  padding: 20px;
+.intro {
   text-align: center;
 }
 
-#skills .my-skills {
-  display: flex;
-}
-
-#skills .box {
-  flex: 1;
-  text-align: center;
-}
-
-#skills .box-html,
-#skills .box-js {
-  background-color: var(--secondary-color);
-}
-
-#skills .box-css,
-#skills .box-github {
-  background-color: var(--dark-color);
-  color: var(--secondary-color);
-}
-
-#skills h3 {
-  padding: 10px 0 20px 0;
+.intro span {
+  display: block;
+  font-size: 1.5rem;
 }
 
 /* Section Portfolio */
 #portfolio {
-  background: var(--dark-color);
+  background: var(--primary-color);
+  padding: 30px;
+}
+.portfolio { 
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 30px;
+  column-gap: 10px;
+  justify-items: center;
 }
 
-#portfolio h2 {
-  padding: 20px 0 10px 0;
+.portfolio_title {
+  grid-column: 1/-1;
 }
 
-.project img {
-  width: 100%;
+.project {
+  width: 300px;
+  height: 300px;
+  background: white;
+  box-shadow: 10px 10px 20px var(--dark-color);
 }
 
+.project_title {
+  line-height: 2;
+}
+
+.project_image {
+  width: 90%;
+}
+
+/* Section About */
+#about {
+  background: var(--secondary-color);
+}
+.about {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 30px;
+  background: var(--secondary-color);
+  margin-bottom: 50px;
+}
+
+.about_title {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+
+
+.about_image {
+  width: 300px;
+  height: 300px;
+  background: url("../img/profiel_okt_2019.jpg") no-repeat center center/cover;
+}
+
+/* .profile-photo {
+  width: 300px;
+  height: 300px;
+
+} */
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button_cv {
+  justify-self: left;
+  align-self: start;
+  margin-left: 30px;
+}
+
+/* Section Contact */
+.contact{
+  background: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+  background: var(--dark-color);
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media li {
+  margin: 0 0.7rem;
+}
 
 
 
@@ -195,15 +244,6 @@ padding: 10px;
 
   .header .fa-bars {
     display: none;
-  }
-
-  #about-me {
-    display: flex;
-  }
-  
-  .about-image, 
-  .about-text {
-    flex: 1;
   }
   
 }
