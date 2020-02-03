@@ -1,10 +1,15 @@
 /* Basic Settings */
 :root {
-  --dark-color: #2c3547;
+  /* --dark-color: #2c3547; */
+  --dark-color: #06303f;
   --light-color: #f4f4f4;
   --white:#fff;
-  --primary-color: #94b1ee;
-  --secondary-color: #c9d8f6;
+  /* --primary-color: rgb(16, 132, 185); */
+  --primary-color: #16a0d2;
+  --secondary-color: #44b3db;
+  /* --secondary-color: rgb(61, 192, 224); */
+  /* --primary-color: #94b1ee;
+  --secondary-color: #c9d8f6; */
   --max-page-width: 1100px;
   --header-height: 140px;
   --font-1: 'Raleway', Arial, Helvetica, sans-serif;
@@ -25,12 +30,22 @@ html {
 body {
   font-family: var(--font-1);
   background: white;
-  color: black;
+  color:white;
 }
 
 .page-width {
   max-width: var(--max-page-width);
   margin: auto;
+  padding: 0 30px 70px 30px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 a {
@@ -84,10 +99,9 @@ li {list-style: none;}
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: -0.25em;
-  color: black;
   padding: 1rem;
   padding-right: 1.75rem;/* compensation for letter-spacing */
-  background: var(--primary-color);
+  background: var(--secondary-color);
   /* border: 1px solid var(--dark-color); */
 }
 
@@ -109,7 +123,7 @@ padding: 10px;
 }
 
 .fa-bars:hover {
-  color: var(--primary-color);
+  color: var(--dark-color);
 }
 
 .name {
@@ -127,8 +141,7 @@ padding: 10px;
 
 /* Section Portfolio */
 #portfolio {
-  background: var(--primary-color);
-  padding: 30px;
+  background: var(--secondary-color);
 }
 .portfolio { 
   text-align: center;
@@ -160,7 +173,7 @@ padding: 10px;
 
 /* Section About */
 #about {
-  background: var(--secondary-color);
+  background: var(--primary-color);
 }
 .about {
   min-height: 400px;
@@ -169,8 +182,6 @@ padding: 10px;
   gap: 20px;
   justify-items: center;
   align-items: center;
-  padding: 30px;
-  background: var(--secondary-color);
   margin-bottom: 50px;
 }
 
@@ -178,7 +189,6 @@ padding: 10px;
   grid-column: 1 / -1;
   text-align: center;
   font-size: 2rem;
-  padding: 2rem;
 }
 
 
@@ -187,6 +197,10 @@ padding: 10px;
   width: 300px;
   height: 300px;
   background: url("../img/profiel_okt_2019.jpg") no-repeat center center/cover;
+  border: 20px solid white;
+  border-bottom: 50px solid white;
+  box-shadow: 10px 10px 20px var(--dark-color);
+  transform: rotate(7deg);
 }
 
 /* .profile-photo {
@@ -198,6 +212,9 @@ padding: 10px;
 .skills {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--dark-color);
 }
 
 .button_cv {
@@ -208,7 +225,16 @@ padding: 10px;
 
 /* Section Contact */
 .contact{
-  background: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+.contact_email {
+  color: white;
+  letter-spacing: 1px;
+  border-bottom: 1px solid white;
+}
+.contact_adress {
+  margin-top: 2rem;
 }
 
 /* Footer */
