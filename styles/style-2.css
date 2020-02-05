@@ -218,6 +218,7 @@ padding: 10px;
 }
 
 .button_cv {
+  display: none;
   justify-self: left;
   align-self: start;
   margin-left: 30px;
