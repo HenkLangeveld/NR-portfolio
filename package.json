@@ -1,0 +1,25 @@
+{
+  "name": "portfolio Henk Langeveld",
+  "version": "1.0.0",
+  "description": "This portfolio shows what I can do as a front-end developer. It shows websites I created, code snippets I've written, where I get inspiration from and what learning process i've gone through and still am going through",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "./bin/build-css",
+    "start": "./bin/watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenkLangeveld/NR-portfolio.git"
+  },
+  "author": "Henk Langeveld",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenkLangeveld/NR-portfolio/issues"
+  },
+  "homepage": "https://github.com/HenkLangeveld/NR-portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  }
+}
