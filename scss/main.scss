@@ -1,6 +1,9 @@
 @import "base/variables.scss";
 @import "base/global.scss";
+@import "components/button.scss";
 @import "components/header.scss";
 @import "components/footer.scss";
 @import "components/mobile_menu.scss";
-@import "components/sections/hero.scss";
+@import "components/card.scss";
+@import "sections/hero.scss";
+@import "sections/projects.scss";

@@ -1,0 +1,17 @@
+#portfolio {
+  background: $secondary-color;
+  padding-bottom: 3rem;
+
+  .portfolio {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 30px;
+    column-gap: 10px;
+    justify-items: center;
+
+    &__title {
+      grid-column: 1/-1;
+    }
+  }
+}

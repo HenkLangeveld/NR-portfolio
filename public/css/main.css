@@ -43,6 +43,25 @@ img {
 .header-spacer {
   height: 140px; }
 
+.section__title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: white;
+  padding-top: 3rem; }
+
+.button {
+  display: inline-block;
+  font-size: 1rem;
+  background: #06303f;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #06303f; }
+  .button:hover {
+    background: none;
+    color: var(--dark-color); }
+
 .header {
   position: fixed;
   top: 0;
@@ -149,6 +168,51 @@ footer {
     .mobile-menu {
       display: none; } }
 
+.card {
+  background-color: #fff;
+  color: #06303f;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #06303f;
+  overflow: hidden; }
+  .card__title {
+    position: relative;
+    z-index: 20;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5em; }
+  .card__image {
+    margin-bottom: auto; }
+  .card__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 70px;
+    right: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 1.5rem;
+    z-index: 10;
+    color: var(--dark-color);
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 300ms; }
+
+@media (hover: hover) {
+  .card__text {
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateY(-100%); } }
+
+.card:hover .card__text {
+  transform: translateY(0); }
+
 .hero {
   position: relative;
   background: url("https://images.unsplash.com/photo-1576345370995-26018389c723?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center center/cover;
@@ -185,3 +249,16 @@ footer {
     font-size: 3rem; }
     .hero__icon-text {
       font-size: 0.6rem; }
+
+#portfolio {
+  background: #44b3db;
+  padding-bottom: 3rem; }
+  #portfolio .portfolio {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    row-gap: 30px;
+    column-gap: 10px;
+    justify-items: center; }
+    #portfolio .portfolio__title {
+      grid-column: 1/-1; }
