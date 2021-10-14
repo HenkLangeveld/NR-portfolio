@@ -1,68 +1,79 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Frontend Developer Henk Langeveld presenteert hiermee zijn werk">
-  <meta name="keywords" content="frontend, frontend developer, web development, web design, Leiden, Amsterdam, Den Haag">
-  <title>Portfolio | Henk Langeveld</title>
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Raleway:400,500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="https://kit.fontawesome.com/9348461e93.js" crossorigin="anonymous"></script>
-  <script defer src="scripts/script.js"></script>
-</head>
-<body>
-  <section class="first-page">
-    <header class="header page-width"> 
-        <span class="logo header_logo">HL</span>
-        <nav class="main-nav">
-          <div class='icon'>
-            <div class='icon__mobile-nav'></div>
-          </div>
-          <ul class="main-nav__list">
-            <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#portfolio">Portfolio</a></li>
-            <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#about">Over mij</a></li>
-            <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Front-end developer Henk Langeveld presenteert hiermee zijn werk"
+    />
+    <meta
+      name="keywords"
+      content="frontend, frontend developer, web development, web design, Leiden, Amsterdam, Den Haag"
+    />
+    <title>Portfolio | Henk Langeveld</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Raleway:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="public/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/9348461e93.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="scripts/script.js"></script>
+  </head>
+  <body>
+    <header class="header container">
+      <span class="header__logo">HL</span>
+      <nav class="main-nav">
+        <a class="main-nav__item" href="#portfolio">Portfolio</a>
+        <a class="main-nav__item" href="#about">Over mij</a>
+        <a class="main-nav__item" href="#contact">Contact</a>
+      </nav>
+      <div class="mobile-menu">
+        <div class="mobile-menu__bars"></div>
+      </div>
     </header>
-    <h1 class="name">Henk Langeveld</h1>
+    <section class="first-page">
+      <!-- <h1 class="name">Henk Langeveld</h1>
     <p class="intro">
       <span class="intro__text--title">Web-development & design</span><br>Creatief, doelgericht,<br>oog voor detail
     </p>
       <i class="intro__icon far fa-arrow-alt-circle-down"></i><span class='intro__text--scroll'>SCROLL</span>
     <p>
 
-    </p>
-  </section>
-  
-  <main>
-    <section id="portfolio">
-      <div class="page-width portfolio">
-        <h2 class="section__title portfolio_title">Portfolio</h2>
+    </p> -->
+    </section>
 
-        <article class="project">
+    <main>
+      <!-- <section id="portfolio">
+      <div class="container portfolio">
+        <h2 class="section__title portfolio_title">Portfolio</h2> -->
+
+      <!-- <article class="project">
           <h3 class="project_title">Iets met pit</h3>
           <img class="project_image" src="img/ietsmetpit_website.png" alt="screenshot Iets met pit">
           <p class="project__text">Voor deze site heb ik gebruik gemaakt van het Kirby CMS. Daarbij gebruik gemaakt van NPM en Webpack tijdens de ontwikkeling</p>
           <div class="project_links">
-            <a href="http://ietsmetpit.nl/" class="button button-dark" target="_blank">bezoek site</a>
-            <!-- <a href="https://github.com/HenkLangeveld/ietsmetpit" class="button" target="_blank">bekijk code</a> -->
-          </div>
-        </article>
+            <a href="http://ietsmetpit.nl/" class="button button-dark" target="_blank">bezoek site</a> -->
+      <!-- <a href="https://github.com/HenkLangeveld/ietsmetpit" class="button" target="_blank">bekijk code</a> -->
+      <!-- </div>
+        </article> -->
 
-        <article class="project">
+      <!-- <article class="project">
           <h3 class="project_title">Steef</h3>
           <img class="project_image" src="img/steef_website.jpg" alt="screenshot Steef">
           <p class="project__text">Mijn eerste echte opdracht is het maken van een portfolio site voor acteur, regiseur, schrijver en zanger Steef Hupkes.</p>
           <div class="project_links">
-            <a href="http://steefhupkes.nl/" class="button button-dark" target="_blank">bezoek site</a>
-            <!-- <a href="https://github.com/HenkLangeveld/steef_hupkes" class="button" target="_blank">bekijk code</a> -->
-          </div>
-        </article>
-  
-        <article class="project">
+            <a href="http://steefhupkes.nl/" class="button button-dark" target="_blank">bezoek site</a> -->
+      <!-- <a href="https://github.com/HenkLangeveld/steef_hupkes" class="button" target="_blank">bekijk code</a> -->
+      <!-- </div>
+        </article> -->
+
+      <!-- <article class="project">
           <h3 class="project_title">Uber</h3>
           <img class="project_image" src="img/uber_website.jpg" alt="screenshot Uber">
           <p class="project__text">Om te oefenen met CSS Grid heb ik de homepage van Uber nagemaakt.</p>
@@ -70,9 +81,9 @@
             <a href="https://henklangeveld.github.io/uber/." class="button button-dark" target="_blank">bezoek site</a>
             <a href="https://github.com/HenkLangeveld/uber" class="button" target="_blank">bekijk code</a>
           </div>
-        </article>
-  
-        <article class="project">
+        </article> -->
+
+      <!-- <article class="project">
           <h3 class="project_title">Ola</h3>
           <img class="project_image" src="img/ola_website.jpg" alt="screenshot Ola">
           <p class="project__text"><span>Als oefening met Flexbox heb ik de homepage van Ola nagemaakt.</span></p>
@@ -80,9 +91,9 @@
             <a href="https://henklangeveld.github.io/nr-4.03-ola/." class="button button-dark" target="_blank">bezoek site</a>
             <a href="https://github.com/HenkLangeveld/nr-4.03-ola" class="button" target="_blank">bekijk code</a>
           </div>
-        </article>
-  
-        <article class="project">
+        </article> -->
+
+      <!-- <article class="project">
           <h3 class="project_title">Cue 1</h3>
           <img class="project_image" src="img/cue1_website.jpg" alt="screenshot Cue1">
           <p class="project__text">Mijn eerste keer dat ik zelf code schrijf. <br>De maatschap waar ik voorheen voor werkte had net een nieuwe website. Dus heb ik geprobeerd die na te maken.</p>
@@ -90,12 +101,12 @@
             <a href="https://henklangeveld.github.io/cue1/." class="button" target="_blank">bezoek site</a>
             <a href="https://github.com/HenkLangeveld/cue1" class="button" target="_blank">bekijk code</a>
           </div>
-        </article>
-      </div>
-    </section>
+        </article> -->
+      <!-- </div>
+    </section> -->
 
-    <section id="about">
-      <div class="page-width">
+      <!-- <section id="about">
+      <div class="container">
         <div class="about">
           <h2 class="section__title about_title">Over Mij</h2>
 
@@ -143,10 +154,10 @@
       </div>
         
       </div>
-    </section>
+    </section> -->
 
-    <section id="contact" class="contact">
-      <div class="page-width">
+      <!-- <section id="contact" class="contact">
+      <div class="container">
         <h2 class="section__title">Contact</h2>
         <p class="contact__text">Om met mij in contact te komen kunt u <a href="mailto:henk.langeveld@xs4all.nl" class="contact_email">hier</a> een email sturen</p>
         <ul class="contact_adress"> 
@@ -157,17 +168,18 @@
           <li>henk.langeveld@xs4all.nl</li>
           </ul>
       </div>
-    </section>
-  </main>
+    </section> -->
+    </main>
 
-  <footer class="footer">
-    <span class="copyright">Copyright &copy; 2021 Henk Langeveld web-development & design</span>
+    <footer class="footer container">
+      footer
+      <!-- <span class="copyright">Copyright &copy; 2021 Henk Langeveld web-development & design</span>
     <ul class="social-media">
         <li><a href="https://github.com/HenkLangeveld" target="_blank"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.linkedin.com/in/henk-langeveld-14123534/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         <li><a href="https://www.instagram.com/?hl=nl" target="_blank"><i class="fab fa-instagram"></i></a></li>
-      </ul>
-  </footer>
-  <script src="./js/script.js"></script>
-</body>
+      </ul> -->
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
 </html>

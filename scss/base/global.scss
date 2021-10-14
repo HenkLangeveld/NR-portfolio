@@ -1,0 +1,54 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: $font-1;
+  font-weight: 500;
+  color: $white;
+  background: $primary-color;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: $max-page-width;
+  margin: 0 auto;
+  // padding: 0 10px;
+}
+
+// @media screen and (min-width: $breakpoint-1) {
+//   .container {
+//     padding: 0 30px;
+//   }
+// }
