@@ -408,23 +408,23 @@
 // }
 
 /* Section Contact */
-.contact {
-  background: var(--secondary-color);
-}
+// .contact {
+//   background: var(--secondary-color);
+// }
 
-.contact__text {
-  text-align: center;
-}
+// .contact__text {
+//   text-align: center;
+// }
 
-.contact_email {
-  color: white;
-  letter-spacing: 1px;
-  border-bottom: 1px solid white;
-}
-.contact_adress {
-  text-align: center;
-  margin-top: 2rem;
-}
+// .contact_email {
+//   color: white;
+//   letter-spacing: 1px;
+//   border-bottom: 1px solid white;
+// }
+// .contact_adress {
+//   text-align: center;
+//   margin-top: 2rem;
+// }
 
 /* Footer */
 // .footer {

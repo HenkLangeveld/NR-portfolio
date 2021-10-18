@@ -1,0 +1,18 @@
+.contact {
+  background: $secondary-color;
+
+  &__text {
+    text-align: center;
+  }
+
+  &__email {
+    color: white;
+    letter-spacing: 1px;
+    border-bottom: 1px solid white;
+  }
+
+  &__adress {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

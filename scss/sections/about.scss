@@ -59,14 +59,15 @@
 }
 
 .skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-content: space-evenly;
-  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
   text-align: center;
   color: $dark-color;
 }
 
-.box {
-  margin-bottom: 2rem;
-}
+// .box {
+//   margin-bottom: 2rem;
+// }
