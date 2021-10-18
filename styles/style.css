@@ -325,87 +325,87 @@
 // }
 
 /* Section About */
-#about {
-  background: var(--primary-color);
-}
+// #about {
+//   background: var(--primary-color);
+// }
 
-.about {
-  min-height: 400px;
-  display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); */
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
+// .about {
+//   min-height: 400px;
+//   display: grid;
+//   /* grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); */
+//   gap: 20px;
+//   justify-items: center;
+//   align-items: center;
+//   margin-bottom: 50px;
+// }
 
-.about_title {
-  grid-column: 1 / -1;
-  text-align: center;
-  font-size: 2rem;
-}
+// .about_title {
+//   grid-column: 1 / -1;
+//   text-align: center;
+//   font-size: 2rem;
+// }
 
-.about_image {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 3rem;
-  background: url("../img/profiel_okt_2019.jpg") no-repeat center center/cover;
-  border: 15px solid white;
-  border-bottom: 30px solid white;
-  box-shadow: 10px 10px 20px var(--dark-color);
-  transform: rotate(7deg);
-}
+// .about_image {
+//   width: 200px;
+//   height: 200px;
+//   margin-bottom: 3rem;
+//   background: url("../img/profiel_okt_2019.jpg") no-repeat center center/cover;
+//   border: 15px solid white;
+//   border-bottom: 30px solid white;
+//   box-shadow: 10px 10px 20px var(--dark-color);
+//   transform: rotate(7deg);
+// }
 
-.about_text_title {
-  margin-bottom: 1.3rem;
-}
+// .about_text_title {
+//   margin-bottom: 1.3rem;
+// }
 
-.about_text {
-  line-height: 1.7rem;
-}
+// .about_text {
+//   line-height: 1.7rem;
+// }
 
-.introduction {
-  margin-bottom: 1rem;
-}
+// .introduction {
+//   margin-bottom: 1rem;
+// }
 
-.motivation {
-  margin-bottom: 2rem;
-}
+// .motivation {
+//   margin-bottom: 2rem;
+// }
 
-@media screen and (min-width: 400px) {
-  .about {
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  }
-  .about_image {
-    width: 300px;
-    height: 300px;
-    border: 20px solid white;
-    border-bottom: 50px solid white;
-  }
-}
+// @media screen and (min-width: 400px) {
+//   .about {
+//     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+//   }
+//   .about_image {
+//     width: 300px;
+//     height: 300px;
+//     border: 20px solid white;
+//     border-bottom: 50px solid white;
+//   }
+// }
 
-/* .profile-photo {
-  width: 300px;
-  height: 300px;
+// /* .profile-photo {
+//   width: 300px;
+//   height: 300px;
 
-} */
+// } */
 
-.skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-content: space-evenly;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: var(--dark-color);
-}
+// .skills {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+//   justify-content: space-evenly;
+//   margin-bottom: 2rem;
+//   text-align: center;
+//   color: var(--dark-color);
+// }
 
-.button--cv {
-  margin-left: 0;
-}
+// .button--cv {
+//   margin-left: 0;
+// }
 
-.box {
-  margin-bottom: 2rem;
-}
+// .box {
+//   margin-bottom: 2rem;
+// }
 
 /* Section Contact */
 .contact {
