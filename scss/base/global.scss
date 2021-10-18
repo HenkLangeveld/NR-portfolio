@@ -32,10 +32,6 @@ a {
   text-decoration: none;
   transition: color 300ms;
   color: currentColor;
-
-  &:hover {
-    color: $tertiary-color;
-  }
 }
 
 li {
