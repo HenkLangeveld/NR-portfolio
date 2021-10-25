@@ -26,7 +26,7 @@
     <script defer src="scripts/script.js"></script>
   </head>
   <body>
-    <header class="header container">
+    <!-- <header class="header container">
       <span class="header__logo">HL</span>
       <nav class="main-nav">
         <a class="main-nav__item" href="#portfolio">Portfolio</a>
@@ -36,222 +36,31 @@
       <div class="mobile-menu">
         <div class="mobile-menu__bars"></div>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section class="hero">
-        <div class="header-spacer"></div>
+        <!-- <div class="header-spacer"></div> -->
         <div class="hero-text">
-          <h1 class="title">Henk Langeveld - Staging Test</h1>
-          <p class="hero-text__title">Web-development & design</p>
-          <p>Creatief, doelgericht,<br />oog voor detail</p>
+          <h1 class="title">Henk Langeveld</h1>
+          <p class="hero-text__title">
+            Web-development<br />
+            & design
+          </p>
+          <!-- <p>Creatief, doelgericht,<br />oog voor detail</p> -->
         </div>
-        <div class="hero-icon">
+        <button class="button">
+          <a href="portfolio.html">Show me more</a>
+        </button>
+        <!-- <div class="hero-icon">
           <i class="hero__icon far fa-arrow-alt-circle-down"></i>
           <p><span class="hero__icon-text">SCROLL</span></p>
-        </div>
+        </div> -->
+        <!-- <a href="www.google.com">show me more</a> -->
       </section>
-
-      <section id="portfolio">
-        <div class="container portfolio">
-          <h2 class="section__title portfolio__title">Portfolio</h2>
-
-          <article class="card">
-            <h3 class="card__title">Iets met pit</h3>
-            <img
-              class="card__image"
-              src="img/ietsmetpit_website.png"
-              alt="screenshot Iets met pit"
-            />
-            <p class="card__text">
-              Voor deze site heb ik gebruik gemaakt van het Kirby CMS. Daarbij
-              gebruik gemaakt van NPM en Webpack tijdens de ontwikkeling
-            </p>
-            <div class="card__links">
-              <button class="button">
-                <a href="http://ietsmetpit.nl/" target="_blank">bezoek site</a>
-              </button>
-              <!-- <a href="https://github.com/HenkLangeveld/ietsmetpit" class="button" target="_blank">bekijk code</a> -->
-            </div>
-          </article>
-
-          <article class="card">
-            <h3 class="card__title">Steef</h3>
-            <img
-              class="card__image"
-              src="img/steef_website.jpg"
-              alt="screenshot Steef"
-            />
-            <p class="card__text">
-              Mijn eerste echte opdracht is het maken van een portfolio site
-              voor acteur, regiseur, schrijver en zanger Steef Hupkes.
-            </p>
-            <div class="card__links">
-              <button class="button">
-                <a href="http://steefhupkes.nl/" target="_blank">bezoek site</a>
-              </button>
-              <!-- <a href="https://github.com/HenkLangeveld/steef_hupkes" class="button" target="_blank">bekijk code</a> -->
-            </div>
-          </article>
-
-          <article class="card">
-            <h3 class="card__title">Uber</h3>
-            <img
-              class="card__image"
-              src="img/uber_website.jpg"
-              alt="screenshot Uber"
-            />
-            <p class="card__text">
-              Om te oefenen met CSS Grid heb ik de homepage van Uber nagemaakt.
-            </p>
-            <div class="card__links">
-              <button class="button">
-                <a href="https://henklangeveld.github.io/uber/." target="_blank"
-                  >bezoek site</a
-                >
-              </button>
-              <button class="button">
-                <a href="https://github.com/HenkLangeveld/uber" target="_blank"
-                  >bekijk code</a
-                >
-              </button>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3 class="card__title">Ola</h3>
-            <img
-              class="card__image"
-              src="img/ola_website.jpg"
-              alt="screenshot Ola"
-            />
-            <p class="card__text">
-              <span
-                >Als oefening met Flexbox heb ik de homepage van Ola
-                nagemaakt.</span
-              >
-            </p>
-            <div class="card__links">
-              <button class="button">
-                <a
-                  href="https://henklangeveld.github.io/nr-4.03-ola/."
-                  target="_blank"
-                  >bezoek site</a
-                >
-              </button>
-              <button class="button">
-                <a
-                  href="https://github.com/HenkLangeveld/nr-4.03-ola"
-                  target="_blank"
-                  >bekijk code</a
-                >
-              </button>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3 class="card__title">Cue 1</h3>
-            <img
-              class="card__image"
-              src="img/cue1_website.jpg"
-              alt="screenshot Cue1"
-            />
-            <p class="card__text">
-              Mijn eerste keer dat ik zelf code schrijf. <br />De maatschap waar
-              ik voorheen voor werkte had net een nieuwe website. Dus heb ik
-              geprobeerd die na te maken.
-            </p>
-            <div class="card__links">
-              <button class="button">
-                <a href="https://henklangeveld.github.io/cue1/." target="_blank"
-                  >bezoek site</a
-                >
-              </button>
-              <button class="button">
-                <a href="https://github.com/HenkLangeveld/cue1" target="_blank"
-                  >bekijk code</a
-                >
-              </button>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="about">
-      <div class="container">
-        <div class="about">
-          <h2 class="section__title about__title">Over Mij</h2>
-
-          <div class="about__image"></div>
-          
-          <div class="about__text">
-            <h2 class="about__text--title">Henk Langeveld</h2>
-            <p class="introduction">
-              Mijn kracht als frontend developer ligt in het kunnen combineren van een goed ontwikkeld esthetisch oog (door mijn achtergrond als lichtontwerper en belichter in het theater) met een diepgaande kennis van programmeerstructuren en digitale techniek (vanuit mijn HTS achtergrond). Daarbij heb ik de pragmatische instelling dat een website in de eerste plaats vooral moet doen waar hij voor bedoeld is.
-            </p>
-            <p class="motivation">
-              Zodoende creëer ik mooie websites die makkelijk te onderhouden zijn. En zorg ik er voor dat een gebruiker snel de informatie kan vinden die hij zoekt.
-            </p>
-            <a class="button about__button" href="./cv-jhl.pdf">Bekijk mijn cv</a>
-          </div>
-    
-        </div>
-        
-          
-        <h2 class="section__title">Skills</h2>
-        
-        <div class="skills">
-          <article class="box">
-            <i class="fab fa-html5 fa-6x"></i>
-            <h3>HTML</h3>
-          </article>
-          <article class="box">
-            <i class="fab fa-css3-alt fa-6x"></i>
-            <h3>CSS</h3>
-          </article>
-          <article class="box">
-            <i class="fab fa-js fa-6x"></i>
-            <h3>JavaScript</h3>
-          </article>
-          <article class="box">
-            <i class="fab fa-wordpress fa-6x"></i>
-            <h3>WordPress</h3>
-          </article>
-          <article class="box">
-            <i class="fab fa-vuejs fa-6x"></i>
-            <h3>VueJS</h3>
-          </article>  
-          <article class="box">
-            <i class="fab fa-github fa-6x"></i>
-            <h3>Github</h3>
-          </article>  
-          <article class="box">
-            <i class="fab fa-npm fa-6x"></i>
-            <h3>NPM</h3>
-          </article>  
-        </div>
-            
-      </div>
-        
-      </div>
-    </section>
-
-      <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section__title">Contact</h2>
-        <p class="contact__text">Om met mij in contact te komen kunt u <a href="mailto:henk.langeveld@xs4all.nl" class="contact__email">hier</a> een email sturen</p>
-        <ul class="contact__adress"> 
-          <li>Henk Langeveld</li>
-          <li>Meerkoeteiland 13</li>
-          <li>2251 WV  Voorschoten</li>
-          <li>Nederland</li>
-          <li>henk.langeveld@xs4all.nl</li>
-          </ul>
-      </div>
-    </section>
     </main>
 
-    <footer>
+    <!-- <footer>
       <div class="footer container">
         <span class="copyright"
           >Copyright &copy; 2021 Henk Langeveld web-development & design</span
@@ -276,7 +85,7 @@
           </li>
         </ul>
       </div>
-    </footer>
-    <script src="./js/script.js"></script>
+    </footer> -->
+    <!-- <script src="./js/script.js"></script> -->
   </body>
 </html>
