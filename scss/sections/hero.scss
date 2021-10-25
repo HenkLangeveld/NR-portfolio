@@ -1,0 +1,81 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  padding-bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .floor {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0),
+        $primary-color 75%
+      ),
+      repeating-conic-gradient(
+        from 45deg,
+        $primary-color 0deg 90deg,
+        $secondary-color 90deg 180deg
+      );
+    background-size: 100%, 2em 2em;
+    top: calc(50% + 50px);
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+  }
+
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) rotateY(-45deg);
+    display: flex;
+    // max-width: 90%;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: rgba(200, 150, 150, 0.5);
+
+    &--front,
+    &--right {
+      transform-style: preserve-3d;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      height: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      background-color: rgba($secondary-color, 1);
+      box-shadow: 0 0 1em $dark-color inset;
+    }
+
+    &--front {
+      transform: translateZ(100px);
+    }
+
+    &--right {
+      transform: rotateY(90deg) translateZ(100px);
+    }
+  }
+
+  &__button {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .content-3d {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    perspective: 400px;
+    // perspective-origin: 50% calc(50% - 50px);
+    overflow: hidden;
+  }
+}

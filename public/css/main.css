@@ -217,6 +217,62 @@ footer {
 .card:hover .card__text {
   transform: translateY(0); }
 
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  padding-bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero .floor {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(rgba(255, 255, 255, 0), #16a0d2 75%), repeating-conic-gradient(from 45deg, #16a0d2 0deg 90deg, #44b3db 90deg 180deg);
+    background-size: 100%, 2em 2em;
+    top: calc(50% + 50px);
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg); }
+  .hero__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) rotateY(-45deg);
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: rgba(200, 150, 150, 0.5); }
+    .hero__box--front, .hero__box--right {
+      transform-style: preserve-3d;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      height: 0;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      background-color: #44b3db;
+      box-shadow: 0 0 1em #06303f inset; }
+    .hero__box--front {
+      transform: translateZ(100px); }
+    .hero__box--right {
+      transform: rotateY(90deg) translateZ(100px); }
+  .hero__button {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem; }
+  .hero .content-3d {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    perspective: 400px;
+    overflow: hidden; }
+
 #portfolio {
   background: #44b3db; }
   #portfolio .portfolio {
