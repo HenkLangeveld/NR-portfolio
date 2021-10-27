@@ -249,19 +249,17 @@ footer {
     height: 100vh;
     background-image: radial-gradient(rgba(255, 255, 255, 0), #16a0d2 75%), repeating-conic-gradient(from 45deg, #16a0d2 0deg 90deg, #44b3db 90deg 180deg);
     background-size: 100%, 2em 2em;
-    top: calc(50% + 50px);
+    top: calc(55% + 50px);
     left: 50%;
     transform: translate(-50%, -50%) rotateX(90deg); }
   .hero__box {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) rotateY(-45deg);
-    display: flex;
     width: 200px;
     height: 100px;
-    margin: 0 auto;
-    background-color: rgba(200, 150, 150, 0.5); }
+    margin: 0 auto; }
     .hero__box--front, .hero__box--right {
       position: absolute;
       display: flex;
@@ -286,19 +284,17 @@ footer {
     .hero .float-area-box {
       font-size: 0.7rem;
       position: absolute;
-      top: 20%;
-      left: calc(50% - 2.5em);
       width: 5em;
       aspect-ratio: 1/1;
-      animation: rotateBox 15s infinite linear; }
+      animation: rotateBox infinite linear; }
 
 @keyframes rotateBox {
   to {
-    transform: rotateY(720deg) rotateX(288deg); } }
-
-@keyframes translateBox {
-  to {
-    transform: translateX(120vw); } }
+    transform: rotateY(720deg) rotateX(360deg); } }
+      .hero .float-area-box--1 {
+        animation-duration: 15s;
+        left: calc(50% - 2.5em);
+        top: 20%; }
       .hero .float-area-box--2 {
         animation-duration: 16.2s;
         left: calc(20% - 2.5em);
@@ -335,12 +331,6 @@ footer {
     position: fixed;
     right: 1rem;
     bottom: 1rem; }
-  .hero .content-3d {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    perspective: 400px;
-    overflow: hidden; }
 
 #portfolio {
   background: #44b3db; }
