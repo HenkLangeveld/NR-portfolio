@@ -111,7 +111,7 @@
         left: 0;
         width: 5em;
         height: 5em;
-        background-color: $secondary-color;
+        background-color: rgba($secondary-color, 0.9);
         display: flex;
         flex-direction: column;
         justify-content: center;

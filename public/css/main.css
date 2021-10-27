@@ -308,7 +308,7 @@ footer {
         left: 0;
         width: 5em;
         height: 5em;
-        background-color: #44b3db;
+        background-color: rgba(68, 179, 219, 0.9);
         display: flex;
         flex-direction: column;
         justify-content: center;
