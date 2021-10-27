@@ -1,0 +1,19 @@
+/*
+This makes a class where 3d content can be made.
+Every item within this block wil have the same 3d style.
+Height and width have to be configured in another class.
+The perspective property has to be set to get a distance from the 0 line.
+*/
+
+.canvas-3d {
+  position: relative;
+  perspective: 400px;
+  // perspective-origin: 50% calc(50% - 50px);
+  overflow: hidden;
+
+  *,
+  *::before,
+  *::after {
+    transform-style: preserve-3d;
+  }
+}

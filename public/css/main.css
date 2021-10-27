@@ -53,6 +53,21 @@ section {
   padding-top: 4rem;
   padding-bottom: 2rem; }
 
+/*
+This makes a class where 3d content can be made.
+Every item within this block wil have the same 3d style.
+Height and width have to be configured in another class.
+The perspective property has to be set to get a distance from the 0 line.
+*/
+.canvas-3d {
+  position: relative;
+  perspective: 400px;
+  overflow: hidden; }
+  .canvas-3d *,
+  .canvas-3d *::before,
+  .canvas-3d *::after {
+    transform-style: preserve-3d; }
+
 .button {
   display: inline-block;
   font-size: 1rem;
@@ -225,6 +240,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .hero .hero__canvas {
+    height: 100vh;
+    width: 100vw; }
   .hero .floor {
     position: absolute;
     width: 100vw;
@@ -238,7 +256,6 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform-style: preserve-3d;
     transform: translate(-50%, -50%) rotateY(-45deg);
     display: flex;
     width: 200px;
@@ -246,7 +263,6 @@ footer {
     margin: 0 auto;
     background-color: rgba(200, 150, 150, 0.5); }
     .hero__box--front, .hero__box--right {
-      transform-style: preserve-3d;
       position: absolute;
       display: flex;
       justify-content: center;
@@ -256,12 +272,65 @@ footer {
       width: 100%;
       height: 100%;
       padding: 1rem;
-      background-color: #44b3db;
-      box-shadow: 0 0 1em #06303f inset; }
+      background-color: #06303f;
+      box-shadow: 0 0 1em #16a0d2 inset; }
     .hero__box--front {
       transform: translateZ(100px); }
     .hero__box--right {
       transform: rotateY(90deg) translateZ(100px); }
+  .hero .float-area {
+    width: 100vw;
+    height: calc(50vh + 50px);
+    overflow: hidden;
+    position: absolute; }
+    .hero .float-area-box {
+      font-size: 0.7rem;
+      position: absolute;
+      top: 20%;
+      left: calc(50% - 2.5em);
+      width: 5em;
+      aspect-ratio: 1/1;
+      animation: rotateBox 15s infinite linear; }
+
+@keyframes rotateBox {
+  to {
+    transform: rotateY(720deg) rotateX(288deg); } }
+
+@keyframes translateBox {
+  to {
+    transform: translateX(120vw); } }
+      .hero .float-area-box--2 {
+        animation-duration: 16.2s;
+        left: calc(20% - 2.5em);
+        top: 24%; }
+      .hero .float-area-box--3 {
+        animation-duration: 18.8s;
+        left: calc(80% - 2.5em);
+        top: 24%; }
+      .hero .float-area-box__front, .hero .float-area-box__back, .hero .float-area-box__left, .hero .float-area-box__right, .hero .float-area-box__top, .hero .float-area-box__bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(68, 179, 219, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 1em #06303f inset; }
+      .hero .float-area-box__front {
+        transform: translateZ(2.5em); }
+      .hero .float-area-box__right {
+        transform: rotateY(90deg) translateZ(2.5em); }
+      .hero .float-area-box__left {
+        transform: rotateY(-90deg) translateZ(2.5em); }
+      .hero .float-area-box__back {
+        transform: rotateY(180deg) translateZ(2.5em); }
+      .hero .float-area-box__top {
+        transform: rotateX(90deg) translateZ(2.5em); }
+      .hero .float-area-box__bottom {
+        transform: rotateX(-90deg) translateZ(2.5em); }
   .hero__button {
     position: fixed;
     right: 1rem;
