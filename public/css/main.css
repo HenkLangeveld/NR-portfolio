@@ -122,16 +122,6 @@ The perspective property has to be set to get a distance from the 0 line.
     transition: all 700ms ease-in-out; }
     .header .main-nav--isVisible {
       transform: translateY(0); }
-    @media (min-width: 690px) {
-      .header .main-nav {
-        transform: translateY(0);
-        position: relative;
-        flex-direction: row;
-        gap: 1.5rem;
-        width: auto;
-        height: auto;
-        background: none;
-        color: #fff; } }
 
 footer {
   width: 100%;
@@ -146,6 +136,7 @@ footer {
     margin: 0 0.7rem; }
 
 .mobile-menu {
+  margin-left: auto;
   width: 2rem;
   height: 2rem;
   background: none;
@@ -158,7 +149,7 @@ footer {
     height: 20%;
     border-radius: 10px;
     position: absolute;
-    transition: all 700ms; }
+    transition: all 500ms; }
   .mobile-menu__bars {
     top: 50%;
     transform: translateY(-50%); }
@@ -173,7 +164,7 @@ footer {
   .mobile-menu:hover .mobile-menu__bars,
   .mobile-menu:hover .mobile-menu__bars::before,
   .mobile-menu:hover .mobile-menu__bars::after {
-    background: #44b3db; }
+    background: #ccc; }
   .close .mobile-menu__bars {
     transform: translateY(-50%) rotate(45deg); }
   .close .mobile-menu__bars::before {
@@ -182,9 +173,6 @@ footer {
   .close .mobile-menu__bars::after {
     background: #16a0d2;
     transform: rotate(0deg); }
-  @media (min-width: 690px) {
-    .mobile-menu {
-      display: none; } }
 
 .card {
   background-color: #fff;
@@ -347,6 +335,9 @@ footer {
     justify-items: center; }
     #portfolio .portfolio__title {
       grid-column: 1/-1; }
+
+#courses {
+  background-color: #44b3db; }
 
 .about {
   min-height: 400px;

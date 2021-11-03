@@ -45,15 +45,17 @@
       transform: translateY(0);
     }
 
-    @media (min-width: $breakpoint-2) {
-      transform: translateY(0);
-      position: relative;
-      flex-direction: row;
-      gap: 1.5rem;
-      width: auto;
-      height: auto;
-      background: none;
-      color: $white;
-    }
+    // @media (min-width: $breakpoint-2) {
+    //   transform: translateY(0);
+    //   position: relative;
+    //   // flex-direction: row;
+    //   margin-left: auto;
+    //   gap: 1rem;
+    //   width: auto;
+    //   height: auto;
+    //   background: none;
+    //   color: $white;
+    //   align-items: flex-end;
+    // }
   }
 }
