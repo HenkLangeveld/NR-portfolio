@@ -43,6 +43,12 @@
       line-height: 1.7;
     }
 
+    .progress {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
     .link {
       align-self: center;
       margin-top: 1rem;

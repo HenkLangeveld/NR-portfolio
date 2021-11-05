@@ -275,6 +275,10 @@ footer {
       max-width: 20em;
       margin: 1.5rem auto 1rem;
       line-height: 1.7; }
+    .two-field-layout__text-field .progress {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
     .two-field-layout__text-field .link {
       align-self: center;
       margin-top: 1rem;
