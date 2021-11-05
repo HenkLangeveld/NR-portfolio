@@ -24,3 +24,14 @@ function toggelMobileNav() {
 }
 
 mobileNav.addEventListener('click', toggelMobileNav);
+
+let number = document.querySelector('.progress-bar__progress-percentage');
+let counter = 0;
+setInterval(() => {
+  if (counter === 35) {
+    clearInterval()
+  } else {
+    counter += 1;
+    number.innerHTML = counter + "%";
+  }
+}, 50) 
