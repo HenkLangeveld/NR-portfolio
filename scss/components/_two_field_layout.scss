@@ -1,17 +1,52 @@
 .two-field-layout {
   width: 90%;
-  margin: 0 auto;
+  background-color: #fff;
+  margin: 0 auto 3rem;
   min-height: 50vh;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-2) {
+    flex-direction: row;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
 
   &__image-field {
     overflow: hidden;
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+
+    .iframe {
+      width: 100%;
+      display: block;
+      min-height: 600px;
+    }
   }
 
   &__text-field {
-    background-color: #fff;
+    flex: 0 0 50%;
     color: $dark-color;
-    padding: 1rem;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .text {
+      max-width: 20em;
+      margin: 1.5rem auto 1rem;
+      line-height: 1.7;
+    }
+
+    .link {
+      align-self: center;
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+    }
   }
 }

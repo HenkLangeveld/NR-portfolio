@@ -33,7 +33,8 @@ li {
   list-style: none; }
 
 img {
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 section {
   padding-bottom: 70px; }
@@ -52,6 +53,9 @@ section {
   color: white;
   padding-top: 4rem;
   padding-bottom: 2rem; }
+
+.paragraph-number {
+  font-family: sans-serif; }
 
 .test {
   border: 1px solid black;
@@ -197,7 +201,8 @@ footer {
     z-index: 20;
     font-size: 1.5rem;
     font-weight: 300;
-    margin-bottom: 0.5em; }
+    margin-bottom: 0.5em;
+    text-align: center; }
   .card__image {
     margin-bottom: auto; }
   .card__text {
@@ -226,16 +231,42 @@ footer {
 
 .two-field-layout {
   width: 90%;
-  margin: 0 auto;
+  background-color: #fff;
+  margin: 0 auto 3rem;
   min-height: 50vh;
-  display: grid;
-  grid-template-columns: 1fr; }
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden; }
+  @media (min-width: 690px) {
+    .two-field-layout {
+      flex-direction: row; }
+      .two-field-layout--reverse {
+        flex-direction: row-reverse; } }
   .two-field-layout__image-field {
-    overflow: hidden; }
+    overflow: hidden;
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center; }
+    .two-field-layout__image-field .iframe {
+      width: 100%;
+      display: block;
+      min-height: 600px; }
   .two-field-layout__text-field {
-    background-color: #fff;
+    flex: 0 0 50%;
     color: #06303f;
-    padding: 1rem; }
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .two-field-layout__text-field .text {
+      max-width: 20em;
+      margin: 1.5rem auto 1rem;
+      line-height: 1.7; }
+    .two-field-layout__text-field .link {
+      align-self: center;
+      margin-top: 1rem;
+      padding: 1rem 2rem; }
 
 .hero {
   position: relative;
