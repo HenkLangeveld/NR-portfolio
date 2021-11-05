@@ -1,0 +1,17 @@
+.two-field-layout {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__image-field {
+    overflow: hidden;
+  }
+
+  &__text-field {
+    background-color: #fff;
+    color: $dark-color;
+    padding: 1rem;
+  }
+}

@@ -53,6 +53,10 @@ section {
   padding-top: 4rem;
   padding-bottom: 2rem; }
 
+.test {
+  border: 1px solid black;
+  outline: 3px solid rgba(255, 0, 0, 0.5); }
+
 /*
 This makes a class where 3d content can be made.
 Every item within this block wil have the same 3d style.
@@ -219,6 +223,19 @@ footer {
 
 .card:hover .card__text {
   transform: translateY(0); }
+
+.two-field-layout {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr; }
+  .two-field-layout__image-field {
+    overflow: hidden; }
+  .two-field-layout__text-field {
+    background-color: #fff;
+    color: #06303f;
+    padding: 1rem; }
 
 .hero {
   position: relative;
