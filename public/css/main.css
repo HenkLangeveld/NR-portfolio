@@ -39,6 +39,9 @@ img {
 section {
   padding-bottom: 70px; }
 
+p {
+  margin-bottom: 0.6rem; }
+
 .container {
   max-width: 1100px;
   margin: 0 auto; }
@@ -395,6 +398,13 @@ footer {
     justify-items: center; }
     #portfolio .portfolio__title {
       grid-column: 1/-1; }
+
+.showcase__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center; }
+  .showcase__buttons :first-child {
+    grid-column: 1 / -1; }
 
 #courses {
   background-color: #44b3db; }

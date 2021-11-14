@@ -1,0 +1,11 @@
+.showcase {
+  &__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    :first-child {
+      grid-column: 1 / -1;
+    }
+  }
+}
