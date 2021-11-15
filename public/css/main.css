@@ -103,6 +103,51 @@ The perspective property has to be set to get a distance from the 0 line.
     background: none;
     color: var(--dark-color); }
 
+.button__hero {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #006a93 0%, #015e82 26%, #063040 100%);
+  padding: 0 32.5px;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 2;
+  color: #020d11;
+  text-shadow: 0 -2px 0 black, 0 1px 1px #0f769d;
+  border-radius: 5px;
+  border-top: 1px solid #107da7;
+  border-bottom: 1px solid #0f769d;
+  border-left: none;
+  border-right: none;
+  transition: all 0.06s ease-out; }
+  .button__hero:visited {
+    color: #020d11; }
+  .button__hero:hover {
+    background: linear-gradient(to bottom, #0084b6 0%, #0278a5 26%, #094861 100%);
+    top: 2px; }
+    .button__hero:hover::after {
+      top: 4px; }
+  .button__hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 6px;
+    border-radius: 5px;
+    height: 100%;
+    background: linear-gradient(to top, black 0%, black 6px);
+    box-shadow: 0 1px 0 2px rgba(0, 0, 0, 0.3), 0 5px 2.4px rgba(0, 0, 0, 0.5), 0 10.8px 9px rgba(0, 0, 0, 0.2);
+    transition: all 0.078s ease-out; }
+  .button__hero:active {
+    top: 6px;
+    text-shadow: 0 -2px 0 #063040, 0 1px 1px #0f769d, 0 0 4px white;
+    color: #6dcdf1; }
+    .button__hero:active::after {
+      top: 0;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.7), 0 3px 9px rgba(0, 0, 0, 0.2); }
+
 .header {
   position: fixed;
   top: 0;
@@ -385,7 +430,8 @@ footer {
   .hero__button {
     position: fixed;
     right: 1rem;
-    bottom: 1rem; }
+    bottom: 1rem;
+    font-size: 2rem; }
 
 #portfolio {
   background: #44b3db; }
