@@ -113,7 +113,7 @@ The perspective property has to be set to get a distance from the 0 line.
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   line-height: 2;
-  color: #020d11;
+  color: #ccc;
   text-shadow: 0 -2px 0 black, 0 1px 1px #0f769d;
   border-radius: 5px;
   border-top: 1px solid #107da7;
@@ -122,7 +122,7 @@ The perspective property has to be set to get a distance from the 0 line.
   border-right: none;
   transition: all 0.06s ease-out; }
   .button__hero:visited {
-    color: #020d11; }
+    color: #ccc; }
   .button__hero:hover {
     background: linear-gradient(to bottom, #0084b6 0%, #0278a5 26%, #094861 100%);
     top: 2px; }
