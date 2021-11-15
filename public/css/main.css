@@ -247,7 +247,6 @@ footer {
   color: #06303f;
   position: relative;
   width: 300px;
-  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -256,6 +255,9 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 25px #06303f;
   overflow: hidden; }
+  @media (min-width: 690px) {
+    .card {
+      height: 350px; } }
   .card__title {
     position: relative;
     z-index: 20;
@@ -266,18 +268,21 @@ footer {
   .card__image {
     margin-bottom: auto; }
   .card__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    padding: 3.5rem 1.5rem;
-    z-index: 10;
-    background: rgba(255, 255, 255, 0.7);
-    transition: transform 300ms; }
+    padding: 1rem; }
+    @media (min-width: 690px) {
+      .card__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 10;
+        padding: 3.5rem 1.5rem;
+        background: rgba(255, 255, 255, 0.7);
+        transition: transform 300ms; } }
   .card__links {
     z-index: 20; }
 

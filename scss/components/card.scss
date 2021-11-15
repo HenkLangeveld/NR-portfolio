@@ -3,7 +3,6 @@
   color: $dark-color;
   position: relative;
   width: 300px;
-  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,6 +11,10 @@
   border-radius: 10px;
   box-shadow: 0 0 25px $dark-color;
   overflow: hidden;
+
+  @media (min-width: $breakpoint-2) {
+    height: 350px;
+  }
 
   &__title {
     position: relative;
@@ -27,19 +30,23 @@
   }
 
   &__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    // bottom: 70px;
-    bottom: 0;
-    right: 0;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    padding: 3.5rem 1.5rem;
-    z-index: 10;
-    background: rgba(255, 255, 255, 0.7);
-    transition: transform 300ms;
+    padding: 1rem;
+
+    @media (min-width: $breakpoint-2) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      // bottom: 70px;
+      bottom: 0;
+      right: 0;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      z-index: 10;
+      padding: 3.5rem 1.5rem;
+      background: rgba(255, 255, 255, 0.7);
+      transition: transform 300ms;
+    }
   }
 
   &__links {
