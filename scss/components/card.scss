@@ -31,8 +31,23 @@
 
   &__text {
     padding: 1rem;
+  }
 
-    @media (min-width: $breakpoint-2) {
+  &__links {
+    z-index: 20;
+  }
+}
+
+@media (min-width: $breakpoint-2) {
+  @media (hover: hover) {
+    .card__text {
+      background: rgba(255, 255, 255, 0.8);
+      transform: translateY(-100%);
+    }
+  }
+
+  .card {
+    &__text {
       position: absolute;
       top: 0;
       left: 0;
@@ -47,17 +62,6 @@
       background: rgba(255, 255, 255, 0.7);
       transition: transform 300ms;
     }
-  }
-
-  &__links {
-    z-index: 20;
-  }
-}
-
-@media (hover: hover) {
-  .card__text {
-    background: rgba(255, 255, 255, 0.8);
-    transform: translateY(-100%);
   }
 }
 

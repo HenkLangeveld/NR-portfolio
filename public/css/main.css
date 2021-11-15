@@ -269,27 +269,28 @@ footer {
     margin-bottom: auto; }
   .card__text {
     padding: 1rem; }
-    @media (min-width: 690px) {
-      .card__text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        z-index: 10;
-        padding: 3.5rem 1.5rem;
-        background: rgba(255, 255, 255, 0.7);
-        transition: transform 300ms; } }
   .card__links {
     z-index: 20; }
 
-@media (hover: hover) {
+@media (min-width: 690px) and (hover: hover) {
   .card__text {
     background: rgba(255, 255, 255, 0.8);
     transform: translateY(-100%); } }
+
+@media (min-width: 690px) {
+  .card__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    z-index: 10;
+    padding: 3.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 300ms; } }
 
 .card:hover .card__text {
   transform: translateY(0); }
