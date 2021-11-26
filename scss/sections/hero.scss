@@ -1,4 +1,15 @@
+$test: #7184a8;
+$background: #f6f6f6;
+
 .hero {
+  h1 {
+    font-size: 7.68vw;
+
+    @media (min-aspect-ratio: 1/1) {
+      font-size: 7.68vh;
+    }
+  }
+  background-color: $background;
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -16,14 +27,11 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: radial-gradient(
-        rgba(255, 255, 255, 0),
-        $primary-color 75%
-      ),
+    background-image: radial-gradient(rgba(255, 255, 255, 0), $background 75%),
       repeating-conic-gradient(
         from 45deg,
-        $primary-color 0deg 90deg,
-        $secondary-color 90deg 180deg
+        $background 0deg 90deg,
+        lighten($test, 33%) 90deg 180deg
       );
     background-size: 100%, 2em 2em;
     top: calc(55% + 50px);
@@ -52,16 +60,23 @@
       width: 100%;
       height: 100%;
       padding: 1rem;
-      background-color: rgba($dark-color, 1);
-      box-shadow: 0 0 1em $primary-color inset;
+      background-color: darken($test, 10%);
+      background-color: desaturate($test, 10%);
+      background-color: $test;
+      box-shadow: 0 0 1em lighten($test, 10%) inset;
       line-height: 1.3;
 
       h1 {
+        color: white;
         font-size: 1.8em;
+        text-shadow: -1px 0 0 darken($test, 15%), -2px 0 0 darken($test, 15%),
+          -1px 1px 0 darken($test, 30%), -2px 2px 0 darken($test, 30%);
       }
 
       h2 {
         font-size: 1.2em;
+        text-shadow: 1px 0 0 darken($test, 15%), 2px 0 0 darken($test, 15%),
+          1px 1px 0 darken($test, 30%), 1px 1px 0 darken($test, 30%);
       }
     }
 
@@ -120,12 +135,12 @@
         left: 0;
         width: 5em;
         height: 5em;
-        background-color: rgba($secondary-color, 0.9);
+        background-color: rgba($test, 0.9);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 1em $dark-color inset;
+        box-shadow: 0 0 1em lighten($test, 10%) inset;
       }
 
       &__front {

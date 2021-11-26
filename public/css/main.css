@@ -335,6 +335,7 @@ footer {
       padding: 1rem 2rem; }
 
 .hero {
+  background-color: #f6f6f6;
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -342,6 +343,11 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .hero h1 {
+    font-size: 7.68vw; }
+    @media (min-aspect-ratio: 1 / 1) {
+      .hero h1 {
+        font-size: 7.68vh; } }
   .hero .hero__canvas {
     height: 100vh;
     width: 100vw; }
@@ -349,7 +355,7 @@ footer {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: radial-gradient(rgba(255, 255, 255, 0), #16a0d2 75%), repeating-conic-gradient(from 45deg, #16a0d2 0deg 90deg, #44b3db 90deg 180deg);
+    background-image: radial-gradient(rgba(255, 255, 255, 0), #f6f6f6 75%), repeating-conic-gradient(from 45deg, #f6f6f6 0deg 90deg, #d9dee8 90deg 180deg);
     background-size: 100%, 2em 2em;
     top: calc(55% + 50px);
     left: 50%;
@@ -372,13 +378,18 @@ footer {
       width: 100%;
       height: 100%;
       padding: 1rem;
-      background-color: #06303f;
-      box-shadow: 0 0 1em #16a0d2 inset;
+      background-color: #576a8f;
+      background-color: #7c889d;
+      background-color: #7184a8;
+      box-shadow: 0 0 1em #919fbb inset;
       line-height: 1.3; }
       .hero__box--front h1, .hero__box--right h1 {
-        font-size: 1.8em; }
+        color: white;
+        font-size: 1.8em;
+        text-shadow: -1px 0 0 #4e5f7f, -2px 0 0 #4e5f7f, -1px 1px 0 #313b4f, -2px 2px 0 #313b4f; }
       .hero__box--front h2, .hero__box--right h2 {
-        font-size: 1.2em; }
+        font-size: 1.2em;
+        text-shadow: 1px 0 0 #4e5f7f, 2px 0 0 #4e5f7f, 1px 1px 0 #313b4f, 1px 1px 0 #313b4f; }
     .hero__box--front {
       transform: translateZ(100px); }
     .hero__box--right {
@@ -415,12 +426,12 @@ footer {
         left: 0;
         width: 5em;
         height: 5em;
-        background-color: rgba(68, 179, 219, 0.9);
+        background-color: rgba(113, 132, 168, 0.9);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 1em #06303f inset; }
+        box-shadow: 0 0 1em #919fbb inset; }
       .hero .float-area-box__front {
         transform: translateZ(2.5em); }
       .hero .float-area-box__right {
