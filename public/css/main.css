@@ -242,6 +242,70 @@ footer {
     background: #16a0d2;
     transform: rotate(0deg); }
 
+.box-wrapper {
+  --box-width-3d: 30vw;
+  --box-height-3d: 30vh;
+  --box-depth-3d: 15vw;
+  --box-color-3d: white;
+  --box-background-3d: pink;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: lightgray;
+  transform: rotateX(-45deg);
+  transform: translate(-50%, -50%) rotateY(30deg) rotateX(45deg); }
+
+.box-3d {
+  position: absolute;
+  width: var(--box-width-3d);
+  height: var(--box-height-3d);
+  color: var(--box-color-3d); }
+  .box-3d * {
+    position: absolute; }
+  .box-3d__front, .box-3d__back {
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--box-width-3d);
+    height: var(--box-height-3d);
+    background-color: var(--box-background-3d); }
+  .box-3d__front {
+    transform: translateZ(calc(var(--box-depth-3d) / 2)); }
+  .box-3d__back {
+    transform: rotateY(180deg) translateZ(calc(var(--box-depth-3d) / 2)); }
+  .box-3d__left, .box-3d__right {
+    top: 0;
+    left: calc(50% - var(--box-depth-3d) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--box-depth-3d);
+    height: var(--box-height-3d);
+    background-color: var(--box-background-3d); }
+  .box-3d__left {
+    transform: rotateY(270deg) translateZ(calc(var(--box-width-3d) / 2)); }
+  .box-3d__right {
+    transform: rotateY(90deg) translateZ(calc(var(--box-width-3d) / 2)); }
+  .box-3d__top, .box-3d__bottom {
+    top: calc(50% - var(--box-depth-3d) / 2);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--box-width-3d);
+    height: var(--box-depth-3d);
+    background-color: var(--box-background-3d); }
+  .box-3d__top {
+    transform: rotateX(90deg) translateZ(calc(var(--box-height-3d) / 2)); }
+  .box-3d__bottom {
+    transform: rotateX(270deg) translateZ(calc(var(--box-height-3d) / 2)); }
+
 .card {
   background-color: #fff;
   color: #06303f;

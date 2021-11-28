@@ -1,0 +1,16 @@
+.box-wrapper {
+  --box-width-3d: 30vw;
+  --box-height-3d: 30vh;
+  --box-depth-3d: 15vw;
+  --box-color-3d: white;
+  --box-background-3d: pink;
+
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: lightgray;
+
+  transform: rotateX(-45deg);
+  transform: translate(-50%, -50%) rotateY(30deg) rotateX(45deg);
+}
