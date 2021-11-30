@@ -1,22 +1,31 @@
+/*
+Use this HTML code for the box. Wrap the code in a div where the following properties must be defined:
+--box-width-3d: 30vw;
+--box-height-3d: 30vh;
+--box-depth-3d: 15vw;
+--box-color-3d: white;
+--box-background-3d: pink;
+
+<div class="box-3d">
+  <div class="box-3d__front">Front-content</div>
+  <div class="box-3d__back">Back-content</div>
+  <div class="box-3d__left">Left-content</div>
+  <div class="box-3d__right">Right-content</div>
+  <div class="box-3d__top">Top-content</div>
+  <div class="box-3d__bottom">Bottom-content</div>
+</div>
+*/
+
 .box-3d {
   position: absolute;
   width: var(--box-width-3d);
   height: var(--box-height-3d);
-  // background-color: var(--box-background-3d);
-  color: var(--box-color-3d);
-
-  * {
-    position: absolute;
-  }
 
   &__front,
   &__back {
+    position: absolute;
     left: 0;
     top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: var(--box-width-3d);
     height: var(--box-height-3d);
     background-color: var(--box-background-3d);
@@ -32,12 +41,9 @@
 
   &__left,
   &__right {
+    position: absolute;
     top: 0;
     left: calc(50% - var(--box-depth-3d) / 2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: var(--box-depth-3d);
     height: var(--box-height-3d);
     background-color: var(--box-background-3d);
@@ -53,20 +59,15 @@
 
   &__top,
   &__bottom {
+    position: absolute;
     top: calc(50% - var(--box-depth-3d) / 2);
     left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: var(--box-width-3d);
     height: var(--box-depth-3d);
     background-color: var(--box-background-3d);
-    // background-color: green;
   }
 
   &__top {
-    // background-color: lightgreen;
     transform: rotateX(90deg) translateZ(calc(var(--box-height-3d) / 2));
   }
 

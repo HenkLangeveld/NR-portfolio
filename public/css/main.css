@@ -39,7 +39,7 @@ img {
 section {
   padding-bottom: 70px; }
 
-p {
+p + p {
   margin-bottom: 0.6rem; }
 
 .container {
@@ -85,6 +85,7 @@ The perspective property has to be set to get a distance from the 0 line.
 .canvas-3d {
   position: relative;
   perspective: 400px;
+  perspective-origin: 50% calc(60% - 1px);
   overflow: hidden; }
   .canvas-3d *,
   .canvas-3d *::before,
@@ -250,26 +251,135 @@ footer {
   --box-background-3d: pink;
   z-index: 100;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  left: 30%;
   background-color: lightgray;
-  transform: rotateX(-45deg);
-  transform: translate(-50%, -50%) rotateY(30deg) rotateX(45deg); }
+  transform: rotateX(-45deg); }
 
-.box-3d {
-  position: absolute;
+.box--hero {
+  font-size: 4.3vw;
+  --box-width-3d: 18em;
+  --box-depth-3d: 18em;
+  --box-height-3d: 7.5em;
+  --box-color-3d: white;
+  --box-background-3d: rgba($dark-color, 1);
   width: var(--box-width-3d);
   height: var(--box-height-3d);
-  color: var(--box-color-3d); }
-  .box-3d * {
-    position: absolute; }
-  .box-3d__front, .box-3d__back {
-    left: 0;
-    top: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) translateZ(-8em) rotateY(-45deg); }
+  @media (min-aspect-ratio: 1 / 1) {
+    .box--hero {
+      font-size: 4.3vh; } }
+  @media (min-aspect-ratio: 1 / 1) {
+    .box--hero {
+      transform: translateX(-50%) translateY(-50%) translateZ(-8em) rotateY(-45deg); } }
+  .box--hero .front-content,
+  .box--hero .back-content,
+  .box--hero .top-content,
+  .box--hero .bottom-content,
+  .box--hero .left-content,
+  .box--hero .right-content {
+    background-color: #06303f;
+    box-shadow: 0 0 1em #16a0d2 inset; }
+  .box--hero .front-content,
+  .box--hero .left-content,
+  .box--hero .right-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em; }
+    .box--hero .front-content h1,
+    .box--hero .left-content h1,
+    .box--hero .right-content h1 {
+      padding-left: 0.5em;
+      font-size: 2.2em;
+      line-height: 1.2;
+      letter-spacing: 6px; }
+    .box--hero .front-content h2,
+    .box--hero .left-content h2,
+    .box--hero .right-content h2 {
+      font-size: 1.4em;
+      line-height: 1.4;
+      letter-spacing: 3px; }
+
+.box--skills {
+  font-size: 2.8vw;
+  --box-width-3d: 5em;
+  --box-height-3d: 5em;
+  --box-depth-3d: 5em;
+  --box-color-3d: white;
+  --box-background-3d: lightgray;
+  position: absolute;
+  width: var(--box-width-3d);
+  height: var(--box-height-3d); }
+  @media (min-aspect-ratio: 1 / 1) {
+    .box--skills {
+      font-size: 2.8vh; } }
+  .box--skills--middle {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%); }
+    .box--skills--middle .box-3d {
+      animation: rotateBox infinite linear;
+      animation-duration: 15s; }
+  .box--skills--left {
+    top: 25%;
+    left: 20%;
+    transform: translateX(-50%); }
+    .box--skills--left .box-3d {
+      animation: rotateBox infinite linear;
+      animation-duration: 16.2s; }
+  .box--skills--right {
+    top: 25%;
+    left: 80%;
+    transform: translateX(-50%); }
+    .box--skills--right .box-3d {
+      animation: rotateBox infinite linear;
+      animation-duration: 18.8s; }
+
+@keyframes rotateBox {
+  to {
+    transform: rotateY(720deg) rotateX(360deg); } }
+  .box--skills .front-content,
+  .box--skills .back-content,
+  .box--skills .left-content,
+  .box--skills .right-content,
+  .box--skills .top-content,
+  .box--skills .bottom-content {
+    background-color: rgba(68, 179, 219, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 1em #06303f inset; }
+
+/*
+Use this HTML code for the box. Wrap the code in a div where the following properties must be defined:
+--box-width-3d: 30vw;
+--box-height-3d: 30vh;
+--box-depth-3d: 15vw;
+--box-color-3d: white;
+--box-background-3d: pink;
+
+<div class="box-3d">
+  <div class="box-3d__front">Front-content</div>
+  <div class="box-3d__back">Back-content</div>
+  <div class="box-3d__left">Left-content</div>
+  <div class="box-3d__right">Right-content</div>
+  <div class="box-3d__top">Top-content</div>
+  <div class="box-3d__bottom">Bottom-content</div>
+</div>
+*/
+.box-3d {
+  position: absolute;
+  width: var(--box-width-3d);
+  height: var(--box-height-3d); }
+  .box-3d__front, .box-3d__back {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: var(--box-width-3d);
     height: var(--box-height-3d);
     background-color: var(--box-background-3d); }
@@ -278,12 +388,9 @@ footer {
   .box-3d__back {
     transform: rotateY(180deg) translateZ(calc(var(--box-depth-3d) / 2)); }
   .box-3d__left, .box-3d__right {
+    position: absolute;
     top: 0;
     left: calc(50% - var(--box-depth-3d) / 2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: var(--box-depth-3d);
     height: var(--box-height-3d);
     background-color: var(--box-background-3d); }
@@ -292,12 +399,9 @@ footer {
   .box-3d__right {
     transform: rotateY(90deg) translateZ(calc(var(--box-width-3d) / 2)); }
   .box-3d__top, .box-3d__bottom {
+    position: absolute;
     top: calc(50% - var(--box-depth-3d) / 2);
     left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: var(--box-width-3d);
     height: var(--box-depth-3d);
     background-color: var(--box-background-3d); }
