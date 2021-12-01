@@ -355,6 +355,37 @@ footer {
     align-items: center;
     box-shadow: 0 0 1em #06303f inset; }
 
+.box--button {
+  font-size: 4.3vw;
+  --box-width-3d: 8em;
+  --box-depth-3d: 10px;
+  --box-height-3d: 2em;
+  --box-color-3d: white;
+  --box-background-3d: lightgray;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: var(--box-width-3d);
+  height: var(--box-height-3d);
+  background-color: lightgray; }
+  @media (min-aspect-ratio: 1 / 1) {
+    .box--button {
+      font-size: 4.3vh; } }
+  .box--button:hover {
+    --box-depth-3d: 5px; }
+  .box--button .front-content {
+    background: linear-gradient(to bottom, #006b92 0%, #025f81 26%, #06303f 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .box--button .back-content,
+  .box--button .left-content,
+  .box--button .right-content,
+  .box--button .top-content,
+  .box--button .bottom-content {
+    background-color: #06303f; }
+
 /*
 Use this HTML code for the box. Wrap the code in a div where the following properties must be defined:
 --box-width-3d: 30vw;
