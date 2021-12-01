@@ -84,8 +84,8 @@ The perspective property has to be set to get a distance from the 0 line.
 */
 .canvas-3d {
   position: relative;
-  perspective: 400px;
-  perspective-origin: 50% calc(60% - 1px);
+  perspective: 500px;
+  perspective-origin: 50% 54%;
   overflow: hidden; }
   .canvas-3d *,
   .canvas-3d *::before,
