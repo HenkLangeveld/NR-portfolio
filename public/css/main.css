@@ -617,6 +617,7 @@ Use this HTML code for the box. Wrap the code in a div where the following prope
     width: 100vw; }
   .hero .floor {
     position: absolute;
+    z-index: -1;
     width: 100vw;
     height: 100vh;
     background-image: radial-gradient(rgba(255, 255, 255, 0), #16a0d2 75%), repeating-conic-gradient(from 45deg, #16a0d2 0deg 90deg, #44b3db 90deg 180deg);
