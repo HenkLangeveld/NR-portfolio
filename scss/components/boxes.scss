@@ -15,9 +15,9 @@
 }
 
 .box--hero {
-  font-size: 4.3vw;
+  font-size: clamp(14px, 4.3vw, 30px);
   @media (min-aspect-ratio: 1/1) {
-    font-size: 4.3vh;
+    font-size: clamp(14px, 4.3vh, 30px);
   }
 
   --box-width-3d: 18em;
@@ -78,10 +78,10 @@
 }
 
 .box--skills {
-  font-size: 2.8vw;
+  font-size: clamp(10px, 2.8vw, 20px);
 
   @media (min-aspect-ratio: 1/1) {
-    font-size: 2.8vh;
+    font-size: clamp(10px, 2.8vh, 20px);
   }
 
   --box-width-3d: 5em;
@@ -167,10 +167,10 @@
   right: 20px;
   width: var(--box-width-3d);
   height: var(--box-height-3d);
-  background-color: lightgray;
+  background-color: black;
 
   &:hover {
-    --box-depth-3d: 5px;
+    --box-depth-3d: 6px;
   }
 
   .front-content {
@@ -194,5 +194,90 @@
   .top-content,
   .bottom-content {
     background-color: $dark-color;
+  }
+}
+
+.button-test-container {
+  font-size: clamp(16px, 4vw, 30px);
+  @media (min-aspect-ratio: 1/1) {
+    font-size: clamp(16px, 4vh, 30px);
+  }
+
+  $color: $dark-color;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  .button-test {
+    position: relative;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border-top: 1px solid lighten($color, 22%);
+    border-bottom: 1px solid lighten($color, 20%);
+    border-left: none;
+    border-right: none;
+
+    background: linear-gradient(
+      to bottom,
+      saturate(lighten($color, 15%), 35%) 0%,
+      saturate(lighten($color, 12%), 15%) 26%,
+      $color 100%
+    );
+    transition: transform 300ms;
+
+    &:focus {
+      border: 2px solid lighten($color, 70%);
+    }
+
+    &:hover,
+    &:focus {
+      transform: translateZ(-2px);
+
+      .layer--hover {
+        // display: none;
+        opacity: 0;
+      }
+    }
+
+    &:active {
+      transform: translateZ(-10px);
+
+      .layer {
+        display: none;
+      }
+    }
+  }
+
+  .layers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: opacity 300ms;
+  }
+
+  .layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    background: linear-gradient(
+      to bottom,
+      saturate(lighten($color, 15%), 35%) 0%,
+      saturate(lighten($color, 12%), 15%) 26%,
+      $color 100%
+    );
+    transform: translateZ(var(--tz));
+    box-shadow: 0 0 0.1em #000d inset;
+
+    @for $i from 0 to 12 {
+      &:nth-child(#{$i + 1}) {
+        --tz: #{$i * -1}px;
+      }
+    }
   }
 }

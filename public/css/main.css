@@ -257,7 +257,7 @@ footer {
   transform: rotateX(-45deg); }
 
 .box--hero {
-  font-size: 4.3vw;
+  font-size: clamp(14px, 4.3vw, 30px);
   --box-width-3d: 18em;
   --box-depth-3d: 18em;
   --box-height-3d: 7.5em;
@@ -271,7 +271,7 @@ footer {
   transform: translateX(-50%) translateY(-50%) translateZ(-8em) rotateY(-45deg); }
   @media (min-aspect-ratio: 1 / 1) {
     .box--hero {
-      font-size: 4.3vh; } }
+      font-size: clamp(14px, 4.3vh, 30px); } }
   @media (min-aspect-ratio: 1 / 1) {
     .box--hero {
       transform: translateX(-50%) translateY(-50%) translateZ(-8em) rotateY(-45deg); } }
@@ -305,7 +305,7 @@ footer {
       letter-spacing: 3px; }
 
 .box--skills {
-  font-size: 2.8vw;
+  font-size: clamp(10px, 2.8vw, 20px);
   --box-width-3d: 5em;
   --box-height-3d: 5em;
   --box-depth-3d: 5em;
@@ -316,7 +316,7 @@ footer {
   height: var(--box-height-3d); }
   @media (min-aspect-ratio: 1 / 1) {
     .box--skills {
-      font-size: 2.8vh; } }
+      font-size: clamp(10px, 2.8vh, 20px); } }
   .box--skills--middle {
     top: 10%;
     left: 50%;
@@ -367,12 +367,12 @@ footer {
   right: 20px;
   width: var(--box-width-3d);
   height: var(--box-height-3d);
-  background-color: lightgray; }
+  background-color: black; }
   @media (min-aspect-ratio: 1 / 1) {
     .box--button {
       font-size: 4.3vh; } }
   .box--button:hover {
-    --box-depth-3d: 5px; }
+    --box-depth-3d: 6px; }
   .box--button .front-content {
     background: linear-gradient(to bottom, #006b92 0%, #025f81 26%, #06303f 100%);
     display: flex;
@@ -385,6 +385,77 @@ footer {
   .box--button .top-content,
   .box--button .bottom-content {
     background-color: #06303f; }
+
+.button-test-container {
+  font-size: clamp(16px, 4vw, 30px);
+  position: absolute;
+  bottom: 20px;
+  right: 20px; }
+  @media (min-aspect-ratio: 1 / 1) {
+    .button-test-container {
+      font-size: clamp(16px, 4vh, 30px); } }
+  .button-test-container .button-test {
+    position: relative;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border-top: 1px solid #107ea5;
+    border-bottom: 1px solid #0f779c;
+    border-left: none;
+    border-right: none;
+    background: linear-gradient(to bottom, #006b92 0%, #025f81 26%, #06303f 100%);
+    transition: transform 300ms; }
+    .button-test-container .button-test:focus {
+      border: 2px solid #b2e5f8; }
+    .button-test-container .button-test:hover, .button-test-container .button-test:focus {
+      transform: translateZ(-2px); }
+      .button-test-container .button-test:hover .layer--hover, .button-test-container .button-test:focus .layer--hover {
+        opacity: 0; }
+    .button-test-container .button-test:active {
+      transform: translateZ(-10px); }
+      .button-test-container .button-test:active .layer {
+        display: none; }
+  .button-test-container .layers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: opacity 300ms; }
+  .button-test-container .layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5em;
+    background: linear-gradient(to bottom, #006b92 0%, #025f81 26%, #06303f 100%);
+    transform: translateZ(var(--tz));
+    box-shadow: 0 0 0.1em #000d inset; }
+    .button-test-container .layer:nth-child(1) {
+      --tz: 0px; }
+    .button-test-container .layer:nth-child(2) {
+      --tz: -1px; }
+    .button-test-container .layer:nth-child(3) {
+      --tz: -2px; }
+    .button-test-container .layer:nth-child(4) {
+      --tz: -3px; }
+    .button-test-container .layer:nth-child(5) {
+      --tz: -4px; }
+    .button-test-container .layer:nth-child(6) {
+      --tz: -5px; }
+    .button-test-container .layer:nth-child(7) {
+      --tz: -6px; }
+    .button-test-container .layer:nth-child(8) {
+      --tz: -7px; }
+    .button-test-container .layer:nth-child(9) {
+      --tz: -8px; }
+    .button-test-container .layer:nth-child(10) {
+      --tz: -9px; }
+    .button-test-container .layer:nth-child(11) {
+      --tz: -10px; }
+    .button-test-container .layer:nth-child(12) {
+      --tz: -11px; }
 
 /*
 Use this HTML code for the box. Wrap the code in a div where the following properties must be defined:
