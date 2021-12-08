@@ -14,8 +14,9 @@
 
   .floor {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    z-index: -10;
+    width: 200vw;
+    height: 60vh;
     background-image: radial-gradient(
         rgba(255, 255, 255, 0),
         $primary-color 75%
@@ -26,9 +27,9 @@
         $secondary-color 90deg 180deg
       );
     background-size: 100%, 2em 2em;
-    top: calc(55% + 50px);
+    top: 75%;
     left: 50%;
-    transform: translate(-50%, -10%) rotateX(90deg);
+    transform: translate(-50%, -50%) rotateX(90deg);
   }
 
   &__box {

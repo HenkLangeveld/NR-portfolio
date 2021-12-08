@@ -85,7 +85,7 @@ The perspective property has to be set to get a distance from the 0 line.
 .canvas-3d {
   position: relative;
   perspective: 500px;
-  perspective-origin: 50% 54%;
+  perspective-origin: 50% 64%;
   overflow: hidden; }
   .canvas-3d *,
   .canvas-3d *::before,
@@ -266,15 +266,15 @@ footer {
   width: var(--box-width-3d);
   height: var(--box-height-3d);
   position: absolute;
-  top: 60%;
+  bottom: 25%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%) translateZ(-8em) rotateY(-45deg); }
+  transform: translateX(-50%) translateZ(-8em) rotateY(-45deg); }
   @media (min-aspect-ratio: 1 / 1) {
     .box--hero {
       font-size: clamp(14px, 4.3vh, 30px); } }
   @media (min-aspect-ratio: 1 / 1) {
     .box--hero {
-      transform: translateX(-50%) translateY(-50%) translateZ(-8em) rotateY(-45deg); } }
+      transform: translateX(-50%) translateZ(-8em) rotateY(-45deg); } }
   .box--hero .front-content,
   .box--hero .back-content,
   .box--hero .top-content,
@@ -617,13 +617,14 @@ Use this HTML code for the box. Wrap the code in a div where the following prope
     width: 100vw; }
   .hero .floor {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    z-index: -10;
+    width: 200vw;
+    height: 60vh;
     background-image: radial-gradient(rgba(255, 255, 255, 0), #16a0d2 75%), repeating-conic-gradient(from 45deg, #16a0d2 0deg 90deg, #44b3db 90deg 180deg);
     background-size: 100%, 2em 2em;
-    top: calc(55% + 50px);
+    top: 75%;
     left: 50%;
-    transform: translate(-50%, -10%) rotateX(90deg); }
+    transform: translate(-50%, -50%) rotateX(90deg); }
   .hero__box {
     position: absolute;
     top: 55%;

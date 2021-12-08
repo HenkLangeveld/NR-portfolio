@@ -30,14 +30,13 @@
   height: var(--box-height-3d);
   position: absolute;
 
-  top: 60%;
+  bottom: 25%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%) translateZ(-8em) rotateY(-45deg);
+  transform: translateX(-50%) translateZ(-8em) rotateY(-45deg);
   // transform: translateX(-50%) translateY(-50%) translateZ(-30vw);
 
   @media (min-aspect-ratio: 1/1) {
-    transform: translateX(-50%) translateY(-50%) translateZ(-8em)
-      rotateY(-45deg);
+    transform: translateX(-50%) translateZ(-8em) rotateY(-45deg);
     // transform: translateX(-50%) translateY(-50%) translateZ(-30vh);
   }
 
