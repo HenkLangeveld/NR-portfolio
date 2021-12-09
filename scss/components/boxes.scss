@@ -146,6 +146,14 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 1em $dark-color inset;
+    padding: 0.5em;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
   }
 }
 

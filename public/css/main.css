@@ -353,7 +353,18 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 1em #06303f inset; }
+    box-shadow: 0 0 1em #06303f inset;
+    padding: 0.5em; }
+    .box--skills .front-content img,
+    .box--skills .back-content img,
+    .box--skills .left-content img,
+    .box--skills .right-content img,
+    .box--skills .top-content img,
+    .box--skills .bottom-content img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto; }
 
 .box--button {
   font-size: 4.3vw;
