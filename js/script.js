@@ -15,12 +15,12 @@
 // mobileNavButton.addEventListener('click', showMobileNav);
 // hideMobileNavButton.addEventListener('click', hideMobileNav);
 
-const mobileNav = document.querySelector('.mobile-menu');
-const mainNav = document.querySelector('.main-nav');
+const mobileNav = document.querySelector('.js-mobile-menu');
+const mainNav = document.querySelector('.js-main-nav');
 
 function toggelMobileNav() {
-  mobileNav.classList.toggle('close')
-  mainNav.classList.toggle('main-nav--isVisible');
+  mobileNav.classList.toggle('js-close')
+  mainNav.classList.toggle('js-main-nav--isVisible');
 }
 
 mobileNav.addEventListener('click', toggelMobileNav);

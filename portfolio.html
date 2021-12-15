@@ -25,20 +25,21 @@
     ></script>
     <script defer src="scripts/script.js"></script>
   </head>
+  <!-- Be sure to use BEM and namespaces for the classes -->
   <body>
-    <header class="header container">
-      <!-- <span class="header__logo">HL</span> -->
-      <nav class="main-nav">
-        <a class="main-nav__item" href="#portfolio">Projecten</a>
-        <a class="main-nav__item" href="#showcase">Showcase</a>
-        <a class="main-nav__item" href="#frontend-mentor">Frontend Mentor</a>
+    <header class="c-header o-container">
+      <div class="c-header__logo">Henk Langeveld</div>
+      <nav class="c-main-nav js-main-nav">
+        <a class="c-main-nav__item" href="#portfolio">Projecten</a>
+        <a class="c-main-nav__item" href="#showcase">Showcase</a>
+        <a class="c-main-nav__item" href="#frontend-mentor">Frontend Mentor</a>
         <!-- <a class="main-nav__item" href="#sketches">JavaScript sketches</a> -->
-        <a class="main-nav__item" href="#courses">cursussen</a>
-        <a class="main-nav__item" href="#about">Over mij</a>
-        <a class="main-nav__item" href="#contact">Contact</a>
+        <a class="c-main-nav__item" href="#courses">cursussen</a>
+        <a class="c-main-nav__item" href="#about">Over mij</a>
+        <a class="c-main-nav__item" href="#contact">Contact</a>
       </nav>
-      <div class="mobile-menu">
-        <div class="mobile-menu__bars"></div>
+      <div class="c-mobile-menu js-mobile-menu">
+        <div class="c-mobile-menu__bars"></div>
       </div>
     </header>
 

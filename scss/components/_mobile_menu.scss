@@ -1,4 +1,4 @@
-.mobile-menu {
+.c-mobile-menu {
   margin-left: auto;
   width: 2rem;
   height: 2rem;
@@ -10,12 +10,12 @@
   &__bars,
   &__bars::before,
   &__bars::after {
-    background: $white;
+    background: $dark-color;
     width: 100%;
     height: 20%;
     border-radius: 10px;
     position: absolute;
-    transition: all 500ms;
+    transition: transform 500ms, background-color 200ms;
   }
 
   &__bars {
@@ -41,20 +41,18 @@
   &:hover &__bars,
   &:hover &__bars::before,
   &:hover &__bars::after {
-    background: #ccc;
+    background: $dark-color-2;
   }
 
-  .close &__bars {
+  .js-close &__bars {
     transform: translateY(-50%) rotate(45deg);
   }
 
-  .close &__bars::before {
-    background: $primary-color;
+  .js-close &__bars::before {
     transform: rotate(-90deg);
   }
 
-  .close &__bars::after {
-    background: $primary-color;
+  .js-close &__bars::after {
     transform: rotate(0deg);
   }
 

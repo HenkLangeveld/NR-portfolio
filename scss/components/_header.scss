@@ -1,4 +1,4 @@
-.header {
+.c-header {
   position: fixed;
   top: 0;
   left: 50%;
@@ -9,41 +9,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: $light-color;
 
   &__logo {
-    position: relative;
-    z-index: 10;
-    font-family: "Noto";
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: -0.25em;
-    padding: 1rem;
-    padding-right: 1.75rem; /* compensation for letter-spacing */
-    background: $secondary-color;
+    font-size: 1.5rem;
+    background-color: $dark-color;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    transform: rotateY(45deg);
   }
 
-  .main-nav {
+  .c-main-nav {
+    color: $dark-color-2;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: $header-height;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
     width: 100%;
+    font-size: 1.3rem;
+    line-height: 2.2;
     background: $white;
-    color: $primary-color;
     margin-bottom: 10px;
     padding: 1rem 0;
     transform: translateY(-100%);
     transition: all 700ms ease-in-out;
-
-    &--isVisible {
-      transform: translateY(0);
-    }
 
     // @media (min-width: $breakpoint-2) {
     //   transform: translateY(0);
@@ -57,5 +50,11 @@
     //   color: $white;
     //   align-items: flex-end;
     // }
+  }
+
+  .js-main-nav {
+    &--isVisible {
+      transform: translateY(0);
+    }
   }
 }
